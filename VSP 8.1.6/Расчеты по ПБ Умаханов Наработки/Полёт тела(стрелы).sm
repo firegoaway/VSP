@@ -1,0 +1,533 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="0.99.7030.1435"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="96">
+    <identity>
+      <id>25cec6ac-c7e1-40e9-9f42-8d7eb1a407d3</id>
+      <revision>60</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="9" orientation="Portrait" width="827" height="1169" />
+      <margins left="39" right="39" top="39" bottom="39" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="0.99.7030.1435" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="Math Region" version="0.99.7030.1435" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="TextRegion" version="1.11.7030.1435" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region id="0" left="0" top="54" width="62" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">V0</e>
+          <e type="operand">40</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="1" left="0" top="72" width="66" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">α</e>
+          <e type="operand">45</e>
+          <e type="operand" style="unit">°</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="2" left="0" top="90" width="54" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math significantDigitsMode="true" roundingMode="1" trailingZeros="true">
+        <input>
+          <e type="operand">g</e>
+          <e type="operand">10</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="3" left="0" top="117" width="274" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="rus">
+        <p>Задачу следует решать для случая
+ X0=0 и Y0=0</p>
+      </text>
+    </region>
+    <region id="4" left="0" top="162" width="54" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">x0</e>
+          <e type="operand">0</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="5" left="0" top="180" width="54" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">y0</e>
+          <e type="operand">0</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="6" left="0" top="198" width="180" height="49" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Vx</e>
+          <e type="operand">V0x</e>
+          <e type="operand">α</e>
+          <e type="function" args="1">cos</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">Vy</e>
+          <e type="operand">V0x</e>
+          <e type="operand">α</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">g</e>
+          <e type="operand">t</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">-</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">2</e>
+          <e type="operand">1</e>
+          <e type="function" args="4">sys</e>
+        </input>
+      </math>
+    </region>
+    <region id="7" left="0" top="243" width="204" height="73" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">x</e>
+          <e type="operand">V0x</e>
+          <e type="operand">t</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">α</e>
+          <e type="function" args="1">cos</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">y</e>
+          <e type="operand">V0y</e>
+          <e type="operand">t</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">α</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">g</e>
+          <e type="operand">t</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">-</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">2</e>
+          <e type="operand">1</e>
+          <e type="function" args="4">sys</e>
+        </input>
+      </math>
+    </region>
+    <region id="8" left="378" top="243" width="274" height="56" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="rus">
+        <p>Или X = Vx*t или X= V0x*t*cos(a)
+Оба выражения будут адекватными
+данной задаче</p>
+      </text>
+    </region>
+    <region id="9" left="0" top="315" width="415" height="56" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="rus">
+        <p>Докажем, что траекторией движения будет парабола.
+Для этого выражаем координату y через x и 
+получаем уравнение траектории:</p>
+      </text>
+    </region>
+    <region id="10" left="0" top="369" width="190" height="52" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">y</e>
+          <e type="operand">V0y</e>
+          <e type="operand">x</e>
+          <e type="operand">V0x</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">g</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">x</e>
+          <e type="operand">V0x</e>
+          <e type="operator" args="2">/</e>
+          <e type="bracket">(</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="11" left="0" top="414" width="485" height="104" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="rus">
+        <p>Получили квадратичную зависимость между координатами. 
+Значит траекторией полёта исследуемого тела является
+порабола.
+Найдём время полёта от начала точки до точки падения,
+так как без него хрен что вообще найдём.
+Найти, конечно, можно, но получится фарш из говна и палок.</p>
+      </text>
+    </region>
+    <region id="12" left="0" top="513" width="256" height="60" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math significantDigitsMode="true" trailingZeros="true">
+        <input>
+          <e type="operand">t</e>
+          <e type="operand">2</e>
+          <e type="operand">V0</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">α</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">g</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="none">
+          <e type="operand">2</e>
+          <e type="operand">40</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">π</e>
+          <e type="operand">4</e>
+          <e type="operator" args="2">/</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">10</e>
+          <e type="operator" args="2">/</e>
+        </result>
+      </math>
+    </region>
+    <region id="13" left="0" top="576" width="56" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="1" significantDigitsMode="true" trailingZeros="true">
+        <input>
+          <e type="operand">t</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">6</e>
+        </result>
+      </math>
+    </region>
+    <region id="14" left="72" top="576" width="36" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">сек</e>
+        </input>
+      </math>
+    </region>
+    <region id="15" left="0" top="603" width="489" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="rus">
+        <p>Зная время полёта, найдём максимальное расстояние, которое
+пролетит тело:</p>
+      </text>
+    </region>
+    <region id="16" left="0" top="639" width="276" height="60" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math significantDigitsMode="true" trailingZeros="true">
+        <input>
+          <e type="operand">L</e>
+          <e type="operand">V0</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">2</e>
+          <e type="operand">α</e>
+          <e type="operator" args="2">*</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">g</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="none">
+          <e type="operand">40</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">2</e>
+          <e type="operand">π</e>
+          <e type="operand">4</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">10</e>
+          <e type="operator" args="2">/</e>
+        </result>
+      </math>
+    </region>
+    <region id="17" left="0" top="702" width="88" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math significantDigitsMode="true" trailingZeros="true">
+        <input>
+          <e type="operand">L</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">160.0</e>
+        </result>
+      </math>
+    </region>
+    <region id="18" left="81" top="702" width="20" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">м</e>
+        </input>
+      </math>
+    </region>
+    <region id="19" left="0" top="729" width="364" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="rus">
+        <p>Теперь мы всё знаем, осталось найти высоту:</p>
+      </text>
+    </region>
+    <region id="20" left="0" top="747" width="264" height="69" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math significantDigitsMode="true" trailingZeros="true">
+        <input>
+          <e type="operand">H</e>
+          <e type="operand">V0</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">α</e>
+          <e type="function" args="1">sin</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">2</e>
+          <e type="operand">g</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="none">
+          <e type="operand">40</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">π</e>
+          <e type="operand">4</e>
+          <e type="operator" args="2">/</e>
+          <e type="function" args="1">sin</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">2</e>
+          <e type="operand">10</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+        </result>
+      </math>
+    </region>
+    <region id="21" left="0" top="828" width="64" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math significantDigitsMode="true" roundingMode="1" trailingZeros="true">
+        <input>
+          <e type="operand">H</e>
+        </input>
+        <result action="symbolic">
+          <e type="operand">40</e>
+        </result>
+      </math>
+    </region>
+    <region id="22" left="54" top="828" width="20" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">м</e>
+        </input>
+      </math>
+    </region>
+    <region id="23" left="0" top="891" width="422" height="56" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="rus">
+        <p>Скорость тела в любой момент времени направлена по
+касательной к траектории движения (или параболе) и
+равна:</p>
+      </text>
+    </region>
+    <region id="24" left="0" top="945" width="677" height="74" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math significantDigitsMode="true" trailingZeros="true">
+        <input>
+          <e type="operand">v</e>
+          <e type="operand">V0</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">α</e>
+          <e type="function" args="1">cos</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">V0</e>
+          <e type="operand">α</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">g</e>
+          <e type="operand">t</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">+</e>
+          <e type="function" args="1">sqrt</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="none">
+          <e type="operand">40</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">π</e>
+          <e type="operand">4</e>
+          <e type="operator" args="2">/</e>
+          <e type="function" args="1">cos</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">40</e>
+          <e type="operand">π</e>
+          <e type="operand">4</e>
+          <e type="operator" args="2">/</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">10</e>
+          <e type="operand">2</e>
+          <e type="operand">40</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">π</e>
+          <e type="operand">4</e>
+          <e type="operator" args="2">/</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">10</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">+</e>
+          <e type="function" args="1">sqrt</e>
+        </result>
+      </math>
+    </region>
+    <region id="25" left="81" top="1026" width="24" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">м</e>
+          <e type="operand">c</e>
+          <e type="operator" args="2">/</e>
+        </input>
+      </math>
+    </region>
+    <region id="26" left="0" top="1035" width="88" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math significantDigitsMode="true" roundingMode="1" trailingZeros="true">
+        <input>
+          <e type="operand">v</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">43.95</e>
+        </result>
+      </math>
+    </region>
+    <region id="27" left="0" top="1125" width="397" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="rus">
+        <p>А угол, под которым направлен вектор скорости в
+любой момент времени будет равен:</p>
+      </text>
+    </region>
+    <region id="28" left="0" top="1161" width="197" height="65" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math optimize="0" significantDigitsMode="true" trailingZeros="true">
+        <input>
+          <e type="operand">tgα</e>
+          <e type="operand">V0</e>
+          <e type="operand">α</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">g</e>
+          <e type="operand">t</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">V0</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">α</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="29" left="0" top="1260" width="298" height="117" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math significantDigitsMode="true" trailingZeros="true">
+        <input>
+          <e type="operand">tgα</e>
+        </input>
+        <result action="none">
+          <e type="operand">40</e>
+          <e type="operand">π</e>
+          <e type="operand">4</e>
+          <e type="operator" args="2">/</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">10</e>
+          <e type="operand">2</e>
+          <e type="operand">40</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">π</e>
+          <e type="operand">4</e>
+          <e type="operator" args="2">/</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">10</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">40</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">π</e>
+          <e type="operand">4</e>
+          <e type="operator" args="2">/</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+        </result>
+      </math>
+    </region>
+    <region id="30" left="0" top="1422" width="72" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">tgα</e>
+        </input>
+        <result action="symbolic">
+          <e type="operand">1</e>
+        </result>
+      </math>
+    </region>
+    <region id="31" left="0" top="1530" width="104" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math significantDigitsMode="true" roundingMode="1" trailingZeros="true">
+        <input>
+          <e type="operand">tgα</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1.000</e>
+        </result>
+      </math>
+    </region>
+  </regions>
+</worksheet>

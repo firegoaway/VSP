@@ -1,0 +1,168 @@
+;;; [源泉设计]-[用户组合命令面板]定义文件，最多可以定义20个面板
+;;;   源泉设计的命令完整名称，可参阅sys\yqshortcut.txt
+;;;
+;;;   标题行格式: ******中文标题,英文标题,每列n个按钮(小于等于28个),面板快捷键
+;;;   类别行格式: ****中文标题,英文标题
+;;;   命令行格式: 命令中文名,命令英文名,原始命令(或lisp程序),快捷键(可空置)
+;;;               注：命令行第4项为快捷键,可空置。如果设置,优先级强于总览命令的快捷键
+;;;                   此文件由用户自己设置，源泉不再更新
+
+
+;;;
+******[杂项面板快捷键u1],[Misc Panel u1],26,u1
+;;;   --主要用于设置Q5/Q6/Q7面板的快捷键, 可自己按需要添加--
+
+
+****【杂项设置】,[Misc Settings]
+插入日期时间字串,Date String,yq_date,day            ; ----->这是快捷键例子: 加上",day",这里day是快捷键
+Excel表格转入,Excel Import,yq_excel2table,e2t
+,,
+保存/还原捕捉,Save/Restore OSmode,yq_osmode,oos
+
+****【修改/复制】,[Modify/Copy]
+次数复制,Copy & Array,yq_cm,cn
+内等分复制,Copy & Divide Insided,yq_copydivide,cdf
+,,
+拷贝旋转对齐,Copy and Rotate,yq_copyandrotate,xzc
+等分角度,Divide Angle,yq_angledivide,dfa
+,,
+动态修剪,Dynamic Trim,yq_dynamictrim,tv
+动态延伸,Dynamic Extend,yq_dynamicextend,exv
+改为定长,Lengthen Object,yq_len,lenx
+
+****【曲线/图元】,[Pline/Entity]
+多段线挤出,Extrude a pline,yq_plineextrude,jc
+复制多段线的一段,Copy a Pline Segment,yq_copysegment,xxcc
+等分多段线的一段,Divide a Pline Segment,yq_dividesegment,xxdf
+交点间隔打断,Interval Break,yq_break_interval,bjx
+,,
+圆弧等分曲线,Spline/Ellipse to Arc Pline,yq_s2a,s2a
+线段等分曲线,Spline/Ellipse to line Pline,yq_s2x,s2x
+,,
+整数矩形,Integer Rectangle,yq_irectangle,recz
+三点矩形,3 Point Rectangle,yq_rect3pt,rec3
+四边形对角线,Quads to Diagonals,yq_diagonal,djx
+画格内线,Draw Inside Line,yq_insideline,rx            ; ----->这是快捷键例子: 加上",rx",这里rx是快捷键
+定角构造线,Angle Xline,yq_anglexline,gzx
+选线画平滑连接弧,Append Arc,yq_appendarc,aj
+,,
+文字沿曲线放置,Text Along Curve,yq_text2curve,tt2c
+
+****【标注/图块】,[Dim/Block]
+切换固定图纸空间比例,Switch PS Dimscale,yq_fixpsdimscale,ddps
+懒人标注,Auto DIM,yq_dim_auto,ddc
+标注多边形内角,DIM Polygon Angles,yq_dim_polygonangles,ddans
+标注批量圆弧长,DIM Arcs Length,yq_dim_arcs,ddars
+0长度标注删除,Erase 0 Length DIM,yq_dim_del0,dde0
+标注倾斜,DIM Slope,yq_dim_slope,ddo
+尺寸驱动的拉伸,Strech by Dimension,yq_dimstretch,sdd
+选尺寸画对齐线,Dimensions to Lines,yq_dim2lines,dd2x
+,,
+替换块内颜色,Replace color in block,yq_blockchcolor,bbcc
+,,
+炸开参照块,Explode Reference Block,yq_refx,refx
+参照块改相对路径,Xref to Relative,yq_xref2rel,xf2r
+参照块改绝对路径,Xref to Absolute,yq_xref2abs,xf2a
+
+****【特殊】,[Extra]
+几个关联开关,Relations Switches,yq_relswitch,gl
+,,
+快速切割图像,Clip Image,yq_qgtx,qgtx
+拆分图像,Image Splitting,yq_imagesplit,cftx
+拆分板材,Board Splitting,yq_boardsplit,cfb
+,,
+绘制垫块,Heel Block,yq_heelblock,dk
+车边镜,Beveled Plate Glass,yq_cbj,cbj
+修剪幕墙横竖线,Curtainwall Scissor,yq_trimcurtainwall,tq
+图块/灯具连线,Blocks Connection,yq_linkblocks,lb
+,,
+框内变虚线,Hidden in frames,yq_breakandhidden,bxx
+,,
+全图改为指定图层,All to A Layer,yq_all2layer,er0
+恢复颜色/线性/线宽,Recover Color/Ltype/LW,yq_00,00
+检查是否封闭,Check If Closed,yq_chkclosed,bfb
+
+
+
+
+******[杂项面板快捷键u2],[Misc Panel u2],26,u2
+
+****【文字特殊】,[Text Extra]
+文字.普通匹配,Match Text Mode1,(yq_match_content0 1),sst1
+文字.单选匹配,Match Text Mode2,(yq_match_content0 2),sst2
+文字.多属性匹配,Match Text Mode3,(yq_match_content0 3),sst3
+
+拷贝翻译词组,Copy & translate,yq_copytranslate,xfy
+,,
+;;; 对正方式:  "L" = acAlignmentLeft
+;;;            "C" = acAlignmentCenter
+;;;            "R" = acAlignmentRight
+;;;            "A" = acAlignmentAligned
+;;;            "M" = acAlignmentMiddle
+;;;            "F" = acAlignmentFit
+;;;            "TL" = acAlignmentTopLeft
+;;;            "TC" = acAlignmentTopCenter
+;;;            "TR" = acAlignmentTopRight
+;;;            "ML" = acAlignmentMiddleLeft
+;;;            "MC" = acAlignmentMiddleCenter
+;;;            "MR" = acAlignmentMiddleRight
+;;;            "BL" = acAlignmentBottomLeft
+;;;            "BC" = acAlignmentBottomCenter
+;;;            "BR" = acAlignmentBottomRight
+对正左下,Alignment Left,        (yq_text_alignment "L"),tt1
+对正中下,Alignment Center,      (yq_text_alignment "C"),tt2
+对正右下,Alignment Right,       (yq_text_alignment "R"),tt3
+对正中央,Alignment MiddleCenter,(yq_text_alignment "MC"),tt4
+
+****【算量小工具】,[Calculate Tools]
+文字放入粘贴板,Text to Clipboard,yq_text2clipboard,wz                       ;------> 这是快捷键例子: 加上",wz",这里wz是快捷键
+单选文字追加Excel格,Text to Excel,yq_appendtext2cell,tce
+数字部分追加Excel格,Number to Excel,yq_appendnum2cell,nce
+尺寸数字追加Excel格,Dim to Excel,yq_appenddim2cell,ddce
+,,
+求面积/周长/墙面积,Get Area/Perimeter,yq_areawall,wmj
+,,
+点取面积输出Excel当前格,Pickup Area to Excel,yq_pickArea2excel,dmj
+画矩形取面积输出Excel格,Rectangle Area to Excel,yq_RectangleArea,kmj
+选曲线取面积输出Excel格,Select Area to Excel,yq_plineArea,smj
+文字区域面积输出Excel格,Cell Area to Excel,yq_textCellArea,zmj
+选填充取面积输出Excel格,Select harching to Excel,yq_hatchArea,hmj
+,,
+选曲线取周长输出Excel格,Select Perimeter to Excel,yq_plinePerimeter,szc
+画矩形取中线输出Excel格,Rectangle Midline to Excel,yq_RectangleMidline,kzc
+
+****【过滤选择】,[Filter Select]
+图元过滤选择,Ename Filter,yq_enamefilter,xee
+图层过滤选择,Layer Filter,yq_layerfilter,xer
+颜色过滤选择,Color Filter,yq_colorfilter,xcr
+
+****【专删工具】,[Filter Erase]
+图元过滤删除,Filter Erase,yq_filterErase,dee
+
+
+
+
+******[用户面板快捷键u3],[User Panel u3],26,u3
+
+****【天正工具】,[Filter Erase]
+尝试炸开天正加密块,Crack Tch Protect,yq_tzcracker,tzx
+
+****【杂项其他】,[Misc Others]
+用户配置,User Preferences,yqsys,pz                          ; ----->这是快捷键例子: 加上",pz",这里pz是快捷键
+横构造线,Horizontal xline,(command "xline" "h"),xh         ; ----->这是添加lisp程序的例子
+竖构造线,Vertical xline,(command "xline" "v"),xv
+十字构造线,Cross xline,yq_Crossxline,x2
+,,
+列表换字-管径,Text List-DN,(yq_mlstbox "标题" (list "DN15 DN20 DN32 DN40 DN50 DN60 DN65 DN80 DN100 DN110 DN150 DN200 DN300" "Φ100 Φ200" "DE100 DE200" "D100 D200" "d100 d200")),dn
+列表换字-材料,Text List-Material,(yq_mlstbox "标题" (list "夹丝玻璃 钢化玻璃 茶镜 清镜 超白玻 中空玻璃" "大理石 花岗石 墙面砖 防滑砖" "镜面不锈钢 发丝不锈钢 黑钛不锈钢")),clmc
+,,
+上边线对齐,Top Aligning,(yq_setdq 2)(c:yq_alignment),dqt
+左边线对齐,Left Aligning,(yq_setdq 3)(c:yq_alignment),dql
+右边线对齐,Right Aligning,(yq_setdq 5)(c:yq_alignment),dqr
+下边线对齐,Bottom Aligning,(yq_setdq 6)(c:yq_alignment),dqb
+
+****【AutoCAD命令】,[AutoCAD Commands]
+画线段,Draw a Line,line
+三点弧,3 Points Arc,arc
+拷贝,Copy,copy
+删除,Erase,erase

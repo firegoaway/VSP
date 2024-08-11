@@ -1,0 +1,1098 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="1.0.8348.30405"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="96">
+    <identity>
+      <id>a53f88cb-b625-4bd2-850e-c5d93d15a5cc</id>
+      <revision>26</revision>
+    </identity>
+    <metadata lang="rus">
+      <author>Umakhan</author>
+    </metadata>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <approximateEqualAccuracy>0</approximateEqualAccuracy>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="9" orientation="Portrait" width="827" height="1169" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="1.0.8348.30405" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="MathRegion" version="1.11.8348.30405" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="TextRegion" version="1.11.8348.30405" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region left="0" top="0" width="758" height="44" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>В Сценарии-1 мы считаем риск для 90 человек основного рабочего состава на объекте. Время пребывания 9 часов. Клининг в количестве 10 человек приходит после основного рабочего времени.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="36" width="708" height="44" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>Расчет величины индивидуального пожарного риска для 1 сценария, то есть для людей из основного рабочего состава, примерно такой.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="72" width="523" height="50" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">Qв1</e>
+          <e type="operand">0.042</e>
+          <e type="operand">1</e>
+          <e type="operand">0.9</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">9</e>
+          <e type="operand">24</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand">0.999</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand">0.64</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">5.67</e>
+          <e type="operand">10</e>
+          <e type="operand">7</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="540" top="90" width="57" height="26" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p style="font-size: 12px;">90 чел</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="135" width="737" height="120" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>В Сценарии-2 мы считаем риск для работников клининга, поскольку вероятности \[REGION[7b4c44c2b48f49548aad066e598219d8]]\ и \[REGION[3486e57a0a5d42999a61d88df3f971a2]]\ являются независимыми друг от друга величинами (пребывание сотрудников из числа основного рабочего состава объекта не зависит от пребывания работников клининга на объекте и наоборот). Тогда формула расчета индивидуального пожарного риска для работников клининга (10 человек) будет выглядеть следующим образом:</p>
+        </content>
+        <regions>
+          <region id="7b4c44c2b48f49548aad066e598219d8" left="565" top="0" width="33" height="47" color="#000000" fontSize="12">
+            <math>
+              <input>
+                <e type="operand">9</e>
+                <e type="operand">24</e>
+                <e type="operator" args="2">/</e>
+              </input>
+            </math>
+          </region>
+          <region id="3486e57a0a5d42999a61d88df3f971a2" left="608" top="0" width="33" height="47" color="#000000" fontSize="12">
+            <math>
+              <input>
+                <e type="operand">2</e>
+                <e type="operand">24</e>
+                <e type="operator" args="2">/</e>
+              </input>
+            </math>
+          </region>
+        </regions>
+      </text>
+    </region>
+    <region left="0" top="270" width="523" height="50" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">Qв2</e>
+          <e type="operand">0.042</e>
+          <e type="operand">1</e>
+          <e type="operand">0.9</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">2</e>
+          <e type="operand">24</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand">0.999</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand">0.64</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1.26</e>
+          <e type="operand">10</e>
+          <e type="operand">7</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="540" top="279" width="150" height="28" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p style="font-size: 12px;">\[REGION[b74c9c27b3e6408e9931d68e2c807997]]\ чел из клининга</p>
+        </content>
+        <regions>
+          <region id="b74c9c27b3e6408e9931d68e2c807997" left="2" top="0" width="29" height="27" color="#000000" fontSize="12">
+            <math>
+              <input>
+                <e type="operand">10</e>
+              </input>
+            </math>
+          </region>
+        </regions>
+      </text>
+    </region>
+    <region left="0" top="324" width="554" height="26" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>Это два разных сценария пожара с одним очагом, но с разным набором людей.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="351" width="206" height="39" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">Qв1</e>
+          <e type="operand">Qв2</e>
+          <e type="operator" args="2">+</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">6.93</e>
+          <e type="operand">10</e>
+          <e type="operand">7</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="387" width="179" height="26" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>что тождественно равно</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="405" width="523" height="50" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">Qв1</e>
+          <e type="operand">0.042</e>
+          <e type="operand">1</e>
+          <e type="operand">0.9</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">11</e>
+          <e type="operand">24</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand">0.999</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand">0.64</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">6.93</e>
+          <e type="operand">10</e>
+          <e type="operand">7</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="504" width="714" height="62" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>Сценарий-3. Клининг приходит в течение рабочего времени, убирается 2 часа, и уходит. Клинеров 10 человек. Присутствие клининга не зависит от присутствия работников объекта и наоборот.Тогда потребуется рассмотреть следующую систему уравнений:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="567" width="418" height="135" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">Qв3</e>
+          <e type="operand">0.042</e>
+          <e type="operand">1</e>
+          <e type="operand">0.9</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">9</e>
+          <e type="operand">24</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand">0.999</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand">0.64</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">Qв3</e>
+          <e type="operand">0.042</e>
+          <e type="operand">1</e>
+          <e type="operand">0.9</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">11</e>
+          <e type="operand">24</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand">0.999</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand">0.64</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">Qв3</e>
+          <e type="operand">0.042</e>
+          <e type="operand">1</e>
+          <e type="operand">0.9</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">2</e>
+          <e type="operand">24</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand">0.999</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand">0.64</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">3</e>
+          <e type="operand">1</e>
+          <e type="function" args="5">sys</e>
+        </input>
+      </math>
+    </region>
+    <region left="432" top="576" width="131" height="28" color="#000000" fontSize="12" isBreakable="false">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>при \[REGION[fd4b7b98bff046cba9cf1142e43232f4]]\ чел</p>
+        </content>
+        <regions>
+          <region id="fd4b7b98bff046cba9cf1142e43232f4" left="31" top="0" width="68" height="27" color="#000000" fontSize="12">
+            <math>
+              <input>
+                <e type="operand">90</e>
+                <e type="operand">10</e>
+                <e type="operator" args="2">+</e>
+              </input>
+            </math>
+          </region>
+        </regions>
+      </text>
+    </region>
+    <region left="432" top="621" width="131" height="28" color="#000000" fontSize="12" isBreakable="false">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>при \[REGION[fd4b7b98bff046cba9cf1142e43232f4]]\ чел</p>
+        </content>
+        <regions>
+          <region id="fd4b7b98bff046cba9cf1142e43232f4" left="31" top="0" width="68" height="27" color="#000000" fontSize="12">
+            <math>
+              <input>
+                <e type="operand">90</e>
+                <e type="operand">10</e>
+                <e type="operator" args="2">+</e>
+              </input>
+            </math>
+          </region>
+        </regions>
+      </text>
+    </region>
+    <region left="432" top="666" width="92" height="28" color="#000000" fontSize="12" isBreakable="false">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>при \[REGION[f208bc7e380e4c1d9f17380157af2874]]\ чел</p>
+        </content>
+        <regions>
+          <region id="f208bc7e380e4c1d9f17380157af2874" left="31" top="0" width="29" height="27" color="#000000" fontSize="12">
+            <math>
+              <input>
+                <e type="operand">10</e>
+              </input>
+            </math>
+          </region>
+        </regions>
+      </text>
+    </region>
+    <region left="0" top="702" width="323" height="26" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>Получим следующие значения величины Qв:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="738" width="542" height="135" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">Qв3</e>
+          <e type="operand">0.042</e>
+          <e type="operand">1</e>
+          <e type="operand">0.9</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">9</e>
+          <e type="operand">24</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand">0.999</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand">0.64</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">Qв3</e>
+          <e type="operand">0.042</e>
+          <e type="operand">1</e>
+          <e type="operand">0.9</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">11</e>
+          <e type="operand">24</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand">0.999</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand">0.64</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">Qв3</e>
+          <e type="operand">0.042</e>
+          <e type="operand">1</e>
+          <e type="operand">0.9</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">2</e>
+          <e type="operand">24</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand">0.999</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand">0.64</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">3</e>
+          <e type="operand">1</e>
+          <e type="function" args="5">sys</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">5.67</e>
+          <e type="operand">10</e>
+          <e type="operand">7</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">6.93</e>
+          <e type="operand">10</e>
+          <e type="operand">7</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1.26</e>
+          <e type="operand">10</e>
+          <e type="operand">7</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">3</e>
+          <e type="operand">1</e>
+          <e type="function" args="5">sys</e>
+        </result>
+      </math>
+    </region>
+    <region left="558" top="747" width="131" height="28" color="#000000" fontSize="12" isBreakable="false">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>при \[REGION[fd4b7b98bff046cba9cf1142e43232f4]]\ чел</p>
+        </content>
+        <regions>
+          <region id="fd4b7b98bff046cba9cf1142e43232f4" left="31" top="0" width="68" height="27" color="#000000" fontSize="12">
+            <math>
+              <input>
+                <e type="operand">90</e>
+                <e type="operand">10</e>
+                <e type="operator" args="2">+</e>
+              </input>
+            </math>
+          </region>
+        </regions>
+      </text>
+    </region>
+    <region left="558" top="792" width="131" height="28" color="#000000" fontSize="12" isBreakable="false">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>при \[REGION[fd4b7b98bff046cba9cf1142e43232f4]]\ чел</p>
+        </content>
+        <regions>
+          <region id="fd4b7b98bff046cba9cf1142e43232f4" left="31" top="0" width="68" height="27" color="#000000" fontSize="12">
+            <math>
+              <input>
+                <e type="operand">90</e>
+                <e type="operand">10</e>
+                <e type="operator" args="2">+</e>
+              </input>
+            </math>
+          </region>
+        </regions>
+      </text>
+    </region>
+    <region left="558" top="837" width="92" height="28" color="#000000" fontSize="12" isBreakable="false">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>при \[REGION[f208bc7e380e4c1d9f17380157af2874]]\ чел</p>
+        </content>
+        <regions>
+          <region id="f208bc7e380e4c1d9f17380157af2874" left="31" top="0" width="29" height="27" color="#000000" fontSize="12">
+            <math>
+              <input>
+                <e type="operand">10</e>
+              </input>
+            </math>
+          </region>
+        </regions>
+      </text>
+    </region>
+    <region left="0" top="882" width="453" height="26" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>Нам нужно с большой надёжностью выбрать нужный сценарий.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="927" width="702" height="44" color="#000000" fontSize="12">
+      <text lang="rus" width="700" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>Воспользуемся основными теоремами общей теории вероятностей, но перед этим опишем события, влияющие на вероятность присутствия:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="972" width="681" height="132" color="#000000" fontSize="12">
+      <text lang="rus" width="681" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <ol>
+            <li>Клининг приходит строго в течение рабочего времени основного состава объекта.</li>
+            <li>Клининг может придти до начала рабочего времени или сразу после окончания рабочего времени основного состава объекта.</li>
+            <li>Клининг может придти на 1 час строго в течение рабочего времени и на 1 час до начала или сразу после окончания рабочего времени.</li>
+            <li>Клининг может не придти (плавающий график уборок).</li>
+          </ol>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="1152" width="513" height="26" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>Посчитаем вероятности каждого события из расчёта "придёт/не придёт":</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="1179" width="88" height="29" color="#000000" fontSize="12">
+      <math>
+        <description active="true" position="Top" lang="eng">
+          <content>
+            <p>Клининг точно придёт.</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">A1</e>
+          <e type="function" args="1">P</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">≡</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1224" width="88" height="29" color="#000000" fontSize="12">
+      <math>
+        <description active="true" position="Top" lang="eng">
+          <content>
+            <p>Клининг точно придёт.</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">A2</e>
+          <e type="function" args="1">P</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">≡</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1269" width="88" height="29" color="#000000" fontSize="12">
+      <math>
+        <description active="true" position="Top" lang="eng">
+          <content>
+            <p>Клининг точно придёт.</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">A3</e>
+          <e type="function" args="1">P</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">≡</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1314" width="107" height="29" color="#000000" fontSize="12">
+      <math>
+        <description active="true" position="Top" lang="eng">
+          <content>
+            <p>Клининг может придти, а может не придти.</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">A4</e>
+          <e type="function" args="1">P</e>
+          <e type="operand">0.5</e>
+          <e type="operator" args="2">≡</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1386" width="711" height="44" color="#000000" fontSize="12">
+      <text lang="rus" width="705" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>Принимая во внимание то, что присутствие клининга не зависит от присутствия работников объекта, получаем следующую новую систему уравнений:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="1440" width="603" height="185" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">Qв3</e>
+          <e type="operand">0.042</e>
+          <e type="operand">1</e>
+          <e type="operand">0.9</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">9</e>
+          <e type="operand">24</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">*</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand">0.999</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand">0.64</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">Qв3</e>
+          <e type="operand">0.042</e>
+          <e type="operand">1</e>
+          <e type="operand">0.9</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">11</e>
+          <e type="operand">24</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">*</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand">0.999</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand">0.64</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">Qв3</e>
+          <e type="operand">0.042</e>
+          <e type="operand">1</e>
+          <e type="operand">0.9</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">10</e>
+          <e type="operand">24</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">*</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand">0.999</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand">0.64</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">Qв3</e>
+          <e type="operand">0.042</e>
+          <e type="operand">1</e>
+          <e type="operand">0.9</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">9</e>
+          <e type="operand">24</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">0.5</e>
+          <e type="operator" args="2">*</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand">0.999</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand">0.64</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">4</e>
+          <e type="operand">1</e>
+          <e type="function" args="6">sys</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">5.67</e>
+          <e type="operand">10</e>
+          <e type="operand">7</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">6.93</e>
+          <e type="operand">10</e>
+          <e type="operand">7</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">6.3</e>
+          <e type="operand">10</e>
+          <e type="operand">7</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">2.835</e>
+          <e type="operand">10</e>
+          <e type="operand">7</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">4</e>
+          <e type="operand">1</e>
+          <e type="function" args="6">sys</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="1638" width="498" height="26" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>Дальше пробовали пересчёт по Байесу, но ничего путного не выходит </p>
+        </content>
+      </text>
+    </region>
+    <region left="9" top="1665" width="72" height="47" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">90</e>
+          <e type="operand">9</e>
+          <e type="operand">24</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">≡</e>
+        </input>
+      </math>
+    </region>
+    <region left="99" top="1683" width="164" height="47" color="#000000" fontSize="12">
+      <math optimize="2">
+        <input>
+          <e type="operand">90</e>
+          <e type="operand">10</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">2</e>
+          <e type="operand">9</e>
+          <e type="operand">24</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">2</e>
+          <e type="operand">24</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">≡</e>
+        </input>
+      </math>
+    </region>
+    <region left="9" top="1719" width="72" height="47" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">10</e>
+          <e type="operand">2</e>
+          <e type="operand">24</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">≡</e>
+        </input>
+      </math>
+    </region>
+    <region left="126" top="1746" width="164" height="47" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">2</e>
+          <e type="operand">9</e>
+          <e type="operand">24</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">2</e>
+          <e type="operand">24</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.0625</e>
+        </result>
+      </math>
+    </region>
+    <region left="324" top="1773" width="153" height="47" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">9</e>
+          <e type="operand">24</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">2</e>
+          <e type="operand">24</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">+</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.4583</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="1944" width="685" height="44" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>Воспользуемся пересчётом по Байесу, то есть, превратим величину Qв, как результат сценария, в вероятность события в данном сценарии.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="1998" width="723" height="44" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>Запишем систему уравнений в общем виде. Для этого каждое уравнение системы назовём <span style="font-weight: bold;">гипотезой</span> и присвоим номер.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="2043" width="408" height="135" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">B1</e>
+          <e type="operand">0.042</e>
+          <e type="operand">1</e>
+          <e type="operand">0.9</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">9</e>
+          <e type="operand">24</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand">0.999</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand">0.64</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">B2</e>
+          <e type="operand">0.042</e>
+          <e type="operand">1</e>
+          <e type="operand">0.9</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">11</e>
+          <e type="operand">24</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand">0.999</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand">0.64</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">B3</e>
+          <e type="operand">0.042</e>
+          <e type="operand">1</e>
+          <e type="operand">0.9</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">2</e>
+          <e type="operand">24</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand">0.999</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand">0.64</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">3</e>
+          <e type="operand">1</e>
+          <e type="function" args="5">sys</e>
+        </input>
+      </math>
+    </region>
+    <region left="432" top="2052" width="131" height="28" color="#000000" fontSize="12" isBreakable="false">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>при \[REGION[fd4b7b98bff046cba9cf1142e43232f4]]\ чел</p>
+        </content>
+        <regions>
+          <region id="fd4b7b98bff046cba9cf1142e43232f4" left="31" top="0" width="68" height="27" color="#000000" fontSize="12">
+            <math>
+              <input>
+                <e type="operand">90</e>
+                <e type="operand">10</e>
+                <e type="operator" args="2">+</e>
+              </input>
+            </math>
+          </region>
+        </regions>
+      </text>
+    </region>
+    <region left="432" top="2097" width="92" height="28" color="#000000" fontSize="12" isBreakable="false">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>при \[REGION[fd4b7b98bff046cba9cf1142e43232f4]]\ чел</p>
+        </content>
+        <regions>
+          <region id="fd4b7b98bff046cba9cf1142e43232f4" left="31" top="0" width="29" height="27" color="#000000" fontSize="12">
+            <math>
+              <input>
+                <e type="operand">90</e>
+              </input>
+            </math>
+          </region>
+        </regions>
+      </text>
+    </region>
+    <region left="432" top="2142" width="131" height="28" color="#000000" fontSize="12" isBreakable="false">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>при \[REGION[f208bc7e380e4c1d9f17380157af2874]]\ чел</p>
+        </content>
+        <regions>
+          <region id="f208bc7e380e4c1d9f17380157af2874" left="31" top="0" width="68" height="27" color="#000000" fontSize="12">
+            <math>
+              <input>
+                <e type="operand">90</e>
+                <e type="operand">10</e>
+                <e type="operator" args="2">+</e>
+              </input>
+            </math>
+          </region>
+        </regions>
+      </text>
+    </region>
+    <region left="0" top="2196" width="722" height="44" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>Поскольку иные члены уравнения, кроме вероятности присутствия, равны, опустим их для упрощения дальнейших рассуждений.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="2250" width="86" height="135" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">B1</e>
+          <e type="operand">9</e>
+          <e type="operand">24</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">B2</e>
+          <e type="operand">11</e>
+          <e type="operand">24</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">B3</e>
+          <e type="operand">2</e>
+          <e type="operand">24</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">3</e>
+          <e type="operand">1</e>
+          <e type="function" args="5">sys</e>
+        </input>
+      </math>
+    </region>
+    <region left="108" top="2250" width="192" height="40" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>для \[REGION[9023581c83ce4e9c809b64d041b489cf]]\</p>
+        </content>
+        <regions>
+          <region id="9023581c83ce4e9c809b64d041b489cf" left="29" top="0" width="158" height="39" color="#000000" fontSize="12">
+            <math optimize="2">
+              <input>
+                <e type="operand">Qв3</e>
+                <e type="operand">5.67</e>
+                <e type="operand">10</e>
+                <e type="operand">7</e>
+                <e type="operator" args="1">-</e>
+                <e type="operator" args="2">^</e>
+                <e type="operator" args="2">*</e>
+                <e type="operator" args="2">:</e>
+              </input>
+            </math>
+          </region>
+        </regions>
+      </text>
+    </region>
+    <region left="108" top="2295" width="192" height="40" color="#000000" fontSize="12" isBreakable="false">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>для \[REGION[9023581c83ce4e9c809b64d041b489cf]]\</p>
+        </content>
+        <regions>
+          <region id="9023581c83ce4e9c809b64d041b489cf" left="29" top="0" width="158" height="39" color="#000000" fontSize="12">
+            <math optimize="2">
+              <input>
+                <e type="operand">Qв3</e>
+                <e type="operand">6.93</e>
+                <e type="operand">10</e>
+                <e type="operand">7</e>
+                <e type="operator" args="1">-</e>
+                <e type="operator" args="2">^</e>
+                <e type="operator" args="2">*</e>
+                <e type="operator" args="2">:</e>
+              </input>
+            </math>
+          </region>
+        </regions>
+      </text>
+    </region>
+    <region left="108" top="2340" width="192" height="40" color="#000000" fontSize="12" isBreakable="false">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>для \[REGION[9023581c83ce4e9c809b64d041b489cf]]\</p>
+        </content>
+        <regions>
+          <region id="9023581c83ce4e9c809b64d041b489cf" left="29" top="0" width="158" height="39" color="#000000" fontSize="12">
+            <math optimize="2">
+              <input>
+                <e type="operand">Qв3</e>
+                <e type="operand">1.26</e>
+                <e type="operand">10</e>
+                <e type="operand">7</e>
+                <e type="operator" args="1">-</e>
+                <e type="operator" args="2">^</e>
+                <e type="operator" args="2">*</e>
+                <e type="operator" args="2">:</e>
+              </input>
+            </math>
+          </region>
+        </regions>
+      </text>
+    </region>
+    <region left="0" top="2394" width="104" height="26" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>Величина Qв</p>
+        </content>
+      </text>
+    </region>
+  </regions>
+</worksheet>

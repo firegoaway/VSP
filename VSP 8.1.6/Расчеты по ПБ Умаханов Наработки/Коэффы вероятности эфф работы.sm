@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="0.99.7610.506"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="96">
+    <identity>
+      <id>25df7a62-2a08-428a-bbd7-ed03483f1e86</id>
+      <revision>2</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="9" orientation="Portrait" width="827" height="1169" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="0.99.7610.506" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="Math Region" version="0.99.7610.506" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="TextRegion" version="1.11.7610.506" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region left="288" top="18" width="108" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Коэффициенты</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="54" width="110" height="56" color="#000000" fontSize="10">
+      <text lang="rus">
+        <p fontName="Arial">Объемно-
+планировочные
+решения (ОПР)</p>
+      </text>
+    </region>
+    <region left="117" top="54" width="115" height="56" color="#000000" fontSize="10">
+      <text lang="rus">
+        <p fontName="Arial">Системы 
+противодымной 
+защиты (СПДЗ)</p>
+      </text>
+    </region>
+    <region left="252" top="54" width="143" height="56" color="#000000" fontSize="10">
+      <text lang="rus">
+        <p fontName="Arial">Автоматические 
+установки пожарной
+сигнализации(АУПС)</p>
+      </text>
+    </region>
+    <region left="414" top="54" width="149" height="56" color="#000000" fontSize="10">
+      <text lang="rus">
+        <p fontName="Arial">Системы оповещения
+и управления
+эвакуацией (СОУЭ)</p>
+      </text>
+    </region>
+    <region left="576" top="54" width="159" height="56" color="#000000" fontSize="10">
+      <text lang="rus">
+        <p fontName="Arial">Автоматические 
+установки
+пожаротушения (АУПТ)</p>
+      </text>
+    </region>
+    <region left="9" top="126" width="78" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">ОПР</e>
+          <e type="operand">0.8</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="126" top="126" width="70" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">СПДЗ</e>
+          <e type="operand">0</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="270" top="126" width="86" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">АУПС</e>
+          <e type="operand">0.8</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="432" top="126" width="86" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">СОУЭ</e>
+          <e type="operand">0.8</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="594" top="126" width="70" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">АУПТ</e>
+          <e type="operand">0</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="189" width="468" height="26" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Dij</e>
+          <e type="operand">1</e>
+          <e type="operand">1</e>
+          <e type="operand">ОПР</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operand">1</e>
+          <e type="operand">СПДЗ</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand">АУПС</e>
+          <e type="operand">СОУЭ</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand">АУПТ</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.928</e>
+        </result>
+      </math>
+    </region>
+  </regions>
+</worksheet>
