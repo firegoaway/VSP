@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="1.0.8348.30405"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="96">
+    <identity>
+      <id>7a36949d-67dd-41bf-ab04-5900ac12f866</id>
+      <revision>4</revision>
+    </identity>
+    <metadata lang="rus">
+      <author>Umakhan</author>
+    </metadata>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <approximateEqualAccuracy>0</approximateEqualAccuracy>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="9" orientation="Portrait" width="827" height="1169" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="1.0.8348.30405" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="MathRegion" version="1.11.8348.30405" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region left="27" top="90" width="86" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Cp</e>
+          <e type="operand">1.030</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="27" top="108" width="86" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Q</e>
+          <e type="operand">15.800</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="27" top="126" width="86" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">ρ</e>
+          <e type="operand">1.2754</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="27" top="144" width="94" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">T</e>
+          <e type="operand">298</e>
+          <e type="operand">25</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="189" width="160" height="77" color="#000000" fontSize="10">
+      <math ignoreUnits="true">
+        <input>
+          <e type="operand">D</e>
+          <e type="operand">Q</e>
+          <e type="operand">ρ</e>
+          <e type="operand">Cp</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">T</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">g.e</e>
+          <e type="function" args="1">sqrt</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="bracket">(</e>
+          <e type="operand">2</e>
+          <e type="operand">5</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="27" top="324" width="84" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">D</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.2682</e>
+        </result>
+      </math>
+    </region>
+  </regions>
+</worksheet>

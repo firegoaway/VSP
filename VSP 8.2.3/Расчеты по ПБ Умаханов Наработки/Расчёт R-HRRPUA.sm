@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="1.0.8348.30405"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="96">
+    <identity>
+      <id>00eabfd9-7fa5-40d3-b982-a92d42fdbbd6</id>
+      <revision>79</revision>
+    </identity>
+    <metadata lang="rus">
+      <author>Umakhan</author>
+    </metadata>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <approximateEqualAccuracy>0</approximateEqualAccuracy>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="9" orientation="Portrait" width="827" height="1169" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="1.0.8348.30405" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="MathRegion" version="1.11.8348.30405" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="SpecialFunctions" version="1.12.8348.30405" guid="2814e667-4e12-48b1-8d51-194e480eabc5" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region left="0" top="0" width="72" height="27" color="#000000" fontSize="12">
+      <math>
+        <description active="true" position="Top" lang="eng">
+          <content>
+            <p>Площадь помещения, м2</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">F</e>
+          <e type="operand">125</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="351" top="0" width="51" height="27" color="#000000" fontSize="12">
+      <math evaluate="false">
+        <description active="true" position="Top" lang="eng">
+          <content>
+            <p>Ширина полосы горючей нагрузки <br />(приравнивается к ширине помещения), м</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">b</e>
+          <e type="operand">3</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="54" width="91" height="27" color="#000000" fontSize="12">
+      <math>
+        <description active="true" position="Top" lang="eng">
+          <content>
+            <p>Низшая теплота сгорания, кДж/кг</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">h</e>
+          <e type="operand">34800</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="108" width="53" height="27" color="#000000" fontSize="12">
+      <math>
+        <description active="true" position="Top" lang="eng">
+          <content>
+            <p>Множитель пшощади очага пожара</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">k</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="153" width="101" height="27" color="#000000" fontSize="12">
+      <math>
+        <description active="true" position="Top" lang="eng">
+          <content>
+            <p>Линейная скорость распространения пламени, м/сек</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">v</e>
+          <e type="operand">0.0137</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="207" width="230" height="61" color="#000000" fontSize="12">
+      <math>
+        <description active="true" position="Top" lang="eng">
+          <content>
+            <p>Время охвата пожаром всей поверхности горючей нагрузки в помещении, сек</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">tmax</e>
+          <e type="operand">k</e>
+          <e type="operand">F</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">π</e>
+          <e type="operand">v</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="function" args="1">sqrt</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">460.4256</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="297" width="237" height="41" color="#000000" fontSize="12">
+      <math>
+        <description active="true" position="Top" lang="eng">
+          <content>
+            <p>Площадь очага пожара, м2</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">Sочаг</e>
+          <e type="operand">π</e>
+          <e type="operand">v</e>
+          <e type="operand">tmax</e>
+          <e type="operator" args="2">*</e>
+          <e type="bracket">(</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">125</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="360" width="120" height="27" color="#000000" fontSize="12">
+      <math>
+        <description active="true" position="Top" lang="eng">
+          <content>
+            <p>Удельная массовая скорость выгорания, кг/(м2*сек)</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">Ψуд</e>
+          <e type="operand">0.0177</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="414" width="208" height="27" color="#000000" fontSize="12">
+      <math evaluate="false">
+        <description active="true" position="Top" lang="eng">
+          <content>
+            <p>Зависимость скорости выгорания Ψ (кг/с) <br />от времени</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">Ψ</e>
+          <e type="operand">Ψуд</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">v</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">tmax</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">b</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">#</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="486" width="101" height="27" color="#000000" fontSize="12">
+      <math>
+        <description active="true" position="Top" lang="eng">
+          <content>
+            <p>Коэффициент полноты сгорания</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">kпс</e>
+          <e type="operand">0.93</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="468" top="549" width="282" height="27" color="#000000" fontSize="12">
+      <math evaluate="false" exponentialThreshold="10">
+        <description active="false" position="Top" lang="eng" />
+        <input>
+          <e type="operand">hrrpua</e>
+          <e type="operand">h</e>
+          <e type="operand">Ψуд</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">kпс</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">572.8428</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="558" width="98" height="53" color="#000000" fontSize="12">
+      <math>
+        <description active="true" position="Top" lang="eng">
+          <content>
+            <p>Масса веществ в составе многокомпонентного очага пожара, кг</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">m</e>
+          <e type="operand">2500</e>
+          <e type="operand">500</e>
+          <e type="operand">2</e>
+          <e type="operand">1</e>
+          <e type="function" args="4">mat</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="468" top="576" width="242" height="27" color="#000000" fontSize="12">
+      <math evaluate="false" exponentialThreshold="10">
+        <input>
+          <e type="operand">hrrpua</e>
+          <e type="operand">Sочаг</e>
+          <e type="operator" args="2">*</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">28810.8652</e>
+        </result>
+      </math>
+    </region>
+    <region left="468" top="603" width="272" height="27" color="#000000" fontSize="12">
+      <math evaluate="false" exponentialThreshold="10">
+        <input>
+          <e type="operand">hrrpua</e>
+          <e type="operand">h</e>
+          <e type="operand">Ψ</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">kпс</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">8723.2357</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="630" width="107" height="53" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">h</e>
+          <e type="operand">20700</e>
+          <e type="operand">23500</e>
+          <e type="operand">2</e>
+          <e type="operand">1</e>
+          <e type="function" args="4">mat</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="468" top="657" width="190" height="102" color="#000000" fontSize="12">
+      <math evaluate="false">
+        <input>
+          <e type="operand">Sочаг</e>
+          <e type="operand">π</e>
+          <e type="operator" args="2">/</e>
+          <e type="bracket">(</e>
+          <e type="operand">1</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">v</e>
+          <e type="operator" args="2">/</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">225.5616</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="702" width="232" height="127" color="#000000" fontSize="12">
+      <math optimize="2">
+        <input>
+          <e type="operand">i</e>
+          <e type="operand">1</e>
+          <e type="operand">m</e>
+          <e type="function" args="1">rows</e>
+          <e type="function" args="2">range</e>
+          <e type="operand">g</e>
+          <e type="operand">h</e>
+          <e type="operand">i</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">m</e>
+          <e type="operand">i</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">i</e>
+          <e type="operand">1</e>
+          <e type="operand">m</e>
+          <e type="function" args="1">rows</e>
+          <e type="function" args="4">sum</e>
+          <e type="operand">Sочаг</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">kпс</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+          <e type="function" args="3">for</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="846" width="99" height="27" color="#000000" fontSize="12">
+      <math exponentialThreshold="10">
+        <description active="true" position="Top" lang="eng">
+          <content>
+            <p>Удельная пожарная нагрузка на участке с очагом пожара, кДж/м2</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">g</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">472440</e>
+        </result>
+      </math>
+    </region>
+  </regions>
+</worksheet>

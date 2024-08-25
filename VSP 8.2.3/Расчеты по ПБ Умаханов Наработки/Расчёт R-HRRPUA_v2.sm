@@ -1,0 +1,828 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="1.0.8348.30405"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="96">
+    <identity>
+      <id>00eabfd9-7fa5-40d3-b982-a92d42fdbbd6</id>
+      <revision>172</revision>
+    </identity>
+    <metadata lang="rus">
+      <author>Umakhan</author>
+    </metadata>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <approximateEqualAccuracy>0</approximateEqualAccuracy>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="9" orientation="Portrait" width="827" height="1169" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="1.0.8348.30405" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="MathRegion" version="1.11.8348.30405" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="Custom Functions" version="1.1.8051.30522" guid="18dadffd-79a3-4cf9-aee1-d66deb0ea720" />
+      <assembly name="SpecialFunctions" version="1.12.8348.30405" guid="2814e667-4e12-48b1-8d51-194e480eabc5" />
+      <assembly name="TextRegion" version="1.11.8348.30405" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+      <assembly name="AreaRegion" version="1.11.8348.30405" guid="4974b228-4974-44cf-8274-bf2936b4a766" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region left="0" top="0" width="101" height="27" color="#000000" fontSize="12">
+      <math>
+        <description active="true" position="Top" lang="eng">
+          <content>
+            <p>Площадь помещения с очагом пожара, м2</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">F</e>
+          <e type="operand">56.486</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="54" width="53" height="27" color="#000000" fontSize="12">
+      <math>
+        <description active="true" position="Top" lang="eng" width="506">
+          <content>
+            <p>Коэффициент, учитывающий отличие фактической площади горючей нагрузки в помещении и площади помещения</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">k</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="117" width="101" height="27" color="#000000" fontSize="12">
+      <math>
+        <description active="true" position="Top" lang="eng">
+          <content>
+            <p>Линейная скорость распространения пламени, м/сек</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">v</e>
+          <e type="operand">0.0137</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="171" width="120" height="27" color="#000000" fontSize="12">
+      <math>
+        <description active="true" position="Top" lang="eng">
+          <content>
+            <p>Удельная массовая скорость выгорания, кг/(м2*сек)</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">Ψуд</e>
+          <e type="operand">0.0177</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="225" width="101" height="27" color="#000000" fontSize="12">
+      <math>
+        <description active="true" position="Top" lang="eng">
+          <content>
+            <p>Коэффициент полноты сгорания</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">kпс</e>
+          <e type="operand">0.93</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="324" width="192" height="63" color="#000000" fontSize="12">
+      <math>
+        <description active="true" position="Top" lang="eng">
+          <content>
+            <p>Время охвата пожаром всей поверхности горючей нагрузки в помещении, сек</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">tmax</e>
+          <e type="operand">k</e>
+          <e type="operand">F</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">π</e>
+          <e type="operand">v</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="function" args="1">sqrt</e>
+          <e type="function" args="1">Ceil</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">310</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="423" width="237" height="43" color="#000000" fontSize="12">
+      <math>
+        <description active="true" position="Top" lang="eng">
+          <content>
+            <p>Площадь очага пожара, м2</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">Sочаг</e>
+          <e type="operand">π</e>
+          <e type="operand">v</e>
+          <e type="operand">tmax</e>
+          <e type="operator" args="2">*</e>
+          <e type="bracket">(</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="function" args="1">Ceil</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">57</e>
+        </result>
+      </math>
+    </region>
+    <region top="504" color="#000000">
+      <area single="true" collapsed="true" />
+    </region>
+    <region left="0" top="540" width="101" height="27" color="#000000" fontSize="12">
+      <math>
+        <description active="true" position="Top" lang="eng">
+          <content>
+            <p>Телопта сгорания составного компонента № 1, кДж/кг</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">h1</e>
+          <e type="operand">20700</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="594" width="72" height="27" color="#000000" fontSize="12">
+      <math>
+        <description active="true" position="Top" lang="eng">
+          <content>
+            <p>Масса составного компонента № 1, кг</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">m1</e>
+          <e type="operand">50</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="648" width="101" height="27" color="#000000" fontSize="12">
+      <math>
+        <description active="true" position="Top" lang="eng">
+          <content>
+            <p>Телопта сгорания составного компонента № 2, кДж/кг</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">h2</e>
+          <e type="operand">23500</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="702" width="82" height="27" color="#000000" fontSize="12">
+      <math>
+        <description active="true" position="Top" lang="eng">
+          <content>
+            <p>Масса составного компонента № 2, кг</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">m2</e>
+          <e type="operand">500</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="792" width="81" height="53" color="#000000" fontSize="12">
+      <math>
+        <description active="true" position="Top" lang="eng">
+          <content>
+            <p>Масса веществ в составе многокомпонентного очага пожара, кг</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">m</e>
+          <e type="operand">m1</e>
+          <e type="operand">m2</e>
+          <e type="operand">2</e>
+          <e type="operand">1</e>
+          <e type="function" args="4">mat</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="864" width="81" height="53" color="#000000" fontSize="12">
+      <math>
+        <description active="true" position="Top" lang="eng">
+          <content>
+            <p>Теплота сгорания, кДж/кг</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">h</e>
+          <e type="operand">h1</e>
+          <e type="operand">h2</e>
+          <e type="operand">2</e>
+          <e type="operand">1</e>
+          <e type="function" args="4">mat</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="981" width="242" height="129" color="#000000" fontSize="12">
+      <math optimize="2">
+        <input>
+          <e type="operand">i</e>
+          <e type="operand">1</e>
+          <e type="operand">m</e>
+          <e type="function" args="1">rows</e>
+          <e type="function" args="2">range</e>
+          <e type="operand">g</e>
+          <e type="operand">h</e>
+          <e type="operand">i</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">m</e>
+          <e type="operand">i</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">i</e>
+          <e type="operand">1</e>
+          <e type="operand">m</e>
+          <e type="function" args="1">rows</e>
+          <e type="function" args="4">sum</e>
+          <e type="operand">Sочаг</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">kпс</e>
+          <e type="operator" args="2">*</e>
+          <e type="function" args="1">Ceil</e>
+          <e type="operator" args="2">:</e>
+          <e type="function" args="3">for</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1125" width="99" height="27" color="#000000" fontSize="12">
+      <math exponentialThreshold="10">
+        <description active="true" position="Top" lang="eng">
+          <content>
+            <p>Удельная пожарная нагрузка на участке с очагом пожара, кДж/м2</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">g</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">208598</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="1188" width="205" height="29" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">H</e>
+          <e type="operand">g</e>
+          <e type="operand">Ψуд</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">kпс</e>
+          <e type="operator" args="2">*</e>
+          <e type="function" args="1">Ceil</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">3434</e>
+        </result>
+      </math>
+    </region>
+    <region top="1242" color="#000000">
+      <area single="true" collapsed="true" />
+    </region>
+    <region left="0" top="1260" width="341" height="26" color="#000000" fontSize="12">
+      <text lang="rus" width="337" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>Введи площади всех Vent на теле очага пожара:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="1287" width="110" height="27" color="#000000" fontSize="12">
+      <math>
+        <description active="true" position="Top" lang="eng" width="352">
+          <content>
+            <p>Площадь Vent на теле очага пожара по нормали к X+, м2</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">Sventxp</e>
+          <e type="operand">3</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1350" width="199" height="27" color="#000000" fontSize="12">
+      <math>
+        <description active="true" position="Top" lang="eng" width="351">
+          <content>
+            <p>Площадь Vent на теле очага пожара по нормали к X-, м2</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">Sventxm</e>
+          <e type="operand">Sventxp</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">3</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="1413" width="110" height="27" color="#000000" fontSize="12">
+      <math>
+        <description active="true" position="Top" lang="eng" width="339">
+          <content>
+            <p>Площадь Vent на теле очага пожара по нормали к Y+, м2</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">Sventyp</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1476" width="199" height="27" color="#000000" fontSize="12">
+      <math>
+        <description active="true" position="Top" lang="eng" width="342">
+          <content>
+            <p>Площадь Vent на теле очага пожара по нормали к Y-, м2</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">Sventym</e>
+          <e type="operand">Sventyp</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">2</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="1539" width="110" height="27" color="#000000" fontSize="12">
+      <math>
+        <description active="true" position="Top" lang="eng" width="337">
+          <content>
+            <p>Площадь Vent на теле очага пожара по нормали к Z+, м2</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">Sventzp</e>
+          <e type="operand">6</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1602" width="199" height="27" color="#000000" fontSize="12">
+      <math>
+        <description active="true" position="Top" lang="eng" width="338">
+          <content>
+            <p>Площадь Vent на теле очага пожара по нормали к Z-, м2</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">Sventzm</e>
+          <e type="operand">Sventzp</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">6</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="1674" width="645" height="26" color="#000000" fontSize="12" isBreakable="false">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>Тут мы пробуем обределить характеристики движения огня в теле ТГН используя H и tmax.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="1710" width="517" height="27" color="#000000" fontSize="12">
+      <math>
+        <description active="true" position="Top" lang="eng">
+          <content>
+            <p>Площадь очага пожара фактическая, м2</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">Sоф</e>
+          <e type="operand">Sventzp</e>
+          <e type="operand">Sventxp</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">Sventxm</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">Sventyp</e>
+          <e type="operand">Sventym</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">16</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="1764" width="652" height="26" color="#000000" fontSize="12" isBreakable="false">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>Далее нужно понять, какой вклад в общий охват имеет каждый из Vent на теле очага пожара.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="1782" width="597" height="26" color="#000000" fontSize="12" isBreakable="false">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>Для этого необходимо узнать, какую часть площадь каждого Vent составляет от Sоф.</p>
+        </content>
+      </text>
+    </region>
+    <region left="207" top="1809" width="235" height="47" color="#000000" fontSize="12">
+      <math roundingMode="1">
+        <input>
+          <e type="operand">S1</e>
+          <e type="operand">Sventzp</e>
+          <e type="operand">Sоф</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">H</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1287.75</e>
+        </result>
+      </math>
+    </region>
+    <region left="207" top="1854" width="235" height="47" color="#000000" fontSize="12">
+      <math roundingMode="1">
+        <input>
+          <e type="operand">S2</e>
+          <e type="operand">Sventxp</e>
+          <e type="operand">Sоф</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">H</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">643.875</e>
+        </result>
+      </math>
+    </region>
+    <region left="207" top="1899" width="225" height="47" color="#000000" fontSize="12">
+      <math roundingMode="1">
+        <input>
+          <e type="operand">S3</e>
+          <e type="operand">Sventyp</e>
+          <e type="operand">Sоф</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">H</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">429.25</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="1944" width="375" height="26" color="#000000" fontSize="12" isBreakable="false">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>Делаем то же самое, но со временем полного охвата.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="1962" width="515" height="44" color="#000000" fontSize="12" isBreakable="false">
+      <text lang="rus" width="515" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>Для этого найдём сколько нужно времени каждой грани для того, чтобы площадь фронта пламени стала равной площади Vent</p>
+        </content>
+      </text>
+    </region>
+    <region left="207" top="2007" width="254" height="47" color="#000000" fontSize="12">
+      <math roundingMode="1">
+        <input>
+          <e type="operand">T1</e>
+          <e type="operand">Sventzp</e>
+          <e type="operand">Sоф</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">tmax</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">116.25</e>
+        </result>
+      </math>
+    </region>
+    <region left="207" top="2052" width="254" height="47" color="#000000" fontSize="12">
+      <math roundingMode="1">
+        <input>
+          <e type="operand">T2</e>
+          <e type="operand">Sventxp</e>
+          <e type="operand">Sоф</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">tmax</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">58.125</e>
+        </result>
+      </math>
+    </region>
+    <region left="207" top="2097" width="245" height="47" color="#000000" fontSize="12">
+      <math roundingMode="1">
+        <input>
+          <e type="operand">T3</e>
+          <e type="operand">Sventyp</e>
+          <e type="operand">Sоф</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">tmax</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">38.75</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="2331" width="435" height="26" color="#000000" fontSize="12">
+      <text lang="rus" width="431" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>То же самое для времени активации Vent'ов на каждой грани.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="2367" width="82" height="27" color="#000000" fontSize="12">
+      <math>
+        <description active="true" position="Top" lang="eng">
+          <content>
+            <p>Время активации Vent Z+, сек</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">tczp</e>
+          <e type="operand">0</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="2412" width="91" height="27" color="#000000" fontSize="12">
+      <math>
+        <description active="true" position="Top" lang="eng">
+          <content>
+            <p>Время активации Vent X+, сек</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">tcxp</e>
+          <e type="operand">73</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="2457" width="120" height="27" color="#000000" fontSize="12">
+      <math>
+        <description active="true" position="Top" lang="eng">
+          <content>
+            <p>Время активации Vent Y+, сек</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">tcyp</e>
+          <e type="operand">109.5</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="207" top="2493" width="265" height="51" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">Tc1</e>
+          <e type="operand">1</e>
+          <e type="operand">Sventzp</e>
+          <e type="operand">Sоф</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operand">tczp</e>
+          <e type="operator" args="2">*</e>
+          <e type="function" args="1">Ceil</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0</e>
+        </result>
+      </math>
+    </region>
+    <region left="207" top="2538" width="275" height="51" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">Tc2</e>
+          <e type="operand">1</e>
+          <e type="operand">Sventxp</e>
+          <e type="operand">Sоф</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operand">tcxp</e>
+          <e type="operator" args="2">*</e>
+          <e type="function" args="1">Ceil</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">60</e>
+        </result>
+      </math>
+    </region>
+    <region left="207" top="2583" width="275" height="51" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">Tc3</e>
+          <e type="operand">1</e>
+          <e type="operand">Sventyp</e>
+          <e type="operand">Sоф</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operand">tcyp</e>
+          <e type="operator" args="2">*</e>
+          <e type="function" args="1">Ceil</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">96</e>
+        </result>
+      </math>
+    </region>
+    <region top="2691" color="#000000">
+      <area single="true" collapsed="true" />
+    </region>
+    <region left="0" top="2727" width="75" height="26" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>Отладка:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="2736" width="428" height="41" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">x</e>
+          <e type="operand">S1</e>
+          <e type="operand">x</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">S2</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">S3</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">H</e>
+          <e type="operator" args="2">≡</e>
+          <e type="operand">x</e>
+          <e type="operand">0</e>
+          <e type="operand">10</e>
+          <e type="operand">6</e>
+          <e type="operator" args="2">^</e>
+          <e type="function" args="4">solve</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="2772" width="233" height="27" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">S1</e>
+          <e type="operand">x</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">S2</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">S3</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">3434</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="2790" width="140" height="27" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">S1</e>
+          <e type="operand">x</e>
+          <e type="operator" args="2">*</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1287.75</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="2844" width="75" height="26" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>Отладка:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="2853" width="457" height="41" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">x</e>
+          <e type="operand">T1</e>
+          <e type="operand">x</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">T2</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">T3</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">tmax</e>
+          <e type="operator" args="2">≡</e>
+          <e type="operand">x</e>
+          <e type="operand">0</e>
+          <e type="operand">10</e>
+          <e type="operand">6</e>
+          <e type="operator" args="2">^</e>
+          <e type="function" args="4">solve</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="2889" width="223" height="27" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">T1</e>
+          <e type="operand">x</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">T2</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">T3</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">310</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="2916" width="130" height="27" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">T1</e>
+          <e type="operand">x</e>
+          <e type="operator" args="2">*</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">116.25</e>
+        </result>
+      </math>
+    </region>
+  </regions>
+</worksheet>

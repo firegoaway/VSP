@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="0.99.7030.1435"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="96">
+    <identity>
+      <id>30ea7ff0-e1b2-4b1d-9f0f-73bf5f538430</id>
+      <revision>9</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="true" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="9" orientation="Portrait" width="827" height="1169" />
+      <margins left="39" right="39" top="39" bottom="39" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="0.99.7030.1435" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="Math Region" version="0.99.7030.1435" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="TextRegion" version="1.11.7030.1435" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region id="0" left="0" top="0" width="58" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">a</e>
+          <e type="operand">8</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="1" left="162" top="0" width="573" height="56" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="rus">
+        <p>Возведение в целую степень и Возведение в действительную степень при 
+одинаковых a и b - два разных действия с кардинально отличающимися 
+результатами.</p>
+      </text>
+    </region>
+    <region id="2" left="0" top="18" width="50" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">b</e>
+          <e type="operand">9</e>
+          <e type="operand">3</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="3" left="162" top="54" width="586" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="rus">
+        <p>Возводить в действительную степень можно только при выполнении условия</p>
+      </text>
+    </region>
+    <region id="4" left="0" top="63" width="96" height="33" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">a</e>
+          <e type="operand">b</e>
+          <e type="operator" args="2">^</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">512</e>
+          <e type="operator" args="1">-</e>
+        </result>
+      </math>
+    </region>
+    <region id="5" left="162" top="72" width="43" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">a</e>
+          <e type="operand">0</e>
+          <e type="operator" args="2">&gt;</e>
+        </input>
+      </math>
+    </region>
+    <region id="6" left="198" top="72" width="20" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">и</e>
+        </input>
+      </math>
+    </region>
+    <region id="7" left="216" top="72" width="430" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="rus">
+        <p>b принадлежит множеству всех действительных чисел Z</p>
+      </text>
+    </region>
+    <region id="8" left="0" top="99" width="132" height="35" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">8</e>
+          <e type="operator" args="1">-</e>
+          <e type="bracket">(</e>
+          <e type="operand">5</e>
+          <e type="operator" args="2">^</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">32768</e>
+          <e type="operator" args="1">-</e>
+        </result>
+      </math>
+    </region>
+    <region id="9" left="0" top="126" width="144" height="52" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">8</e>
+          <e type="operator" args="1">-</e>
+          <e type="bracket">(</e>
+          <e type="operand">10</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">^</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">32768</e>
+          <e type="operator" args="1">-</e>
+        </result>
+      </math>
+    </region>
+    <region id="10" left="0" top="171" width="142" height="37" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">8</e>
+          <e type="operator" args="1">-</e>
+          <e type="bracket">(</e>
+          <e type="operand">10</e>
+          <e type="operator" args="2">^</e>
+          <e type="function" args="1">sqrt</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">32768</e>
+        </result>
+      </math>
+    </region>
+    <region id="11" left="135" top="252" width="145" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">9</e>
+          <e type="operand" style="unit">°</e>
+          <e type="operator" args="2">*</e>
+          <e type="function" args="1">sin</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.1564</e>
+        </result>
+      </math>
+    </region>
+    <region id="12" left="126" top="279" width="206" height="47" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">1</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">2</e>
+          <e type="operand">5</e>
+          <e type="operand">5</e>
+          <e type="function" args="1">sqrt</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">/</e>
+          <e type="function" args="1">sqrt</e>
+          <e type="operator" args="2">-</e>
+          <e type="function" args="1">sqrt</e>
+          <e type="operator" args="2">*</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.1564</e>
+        </result>
+      </math>
+    </region>
+    <region id="13" left="477" top="333" width="216" height="33" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">e</e>
+          <e type="operand">0.693128681619691691</e>
+          <e type="operator" args="2">^</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">2</e>
+        </result>
+      </math>
+    </region>
+    <region id="14" left="108" top="423" width="100" height="50" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">4</e>
+          <e type="operand">6</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="1">-</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">64</e>
+          <e type="operator" args="1">-</e>
+        </result>
+      </math>
+    </region>
+    <region id="15" left="225" top="423" width="100" height="50" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">4</e>
+          <e type="operand">6</e>
+          <e type="operand">3</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="1">-</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">16</e>
+          <e type="operator" args="1">-</e>
+        </result>
+      </math>
+    </region>
+    <region id="16" left="108" top="468" width="110" height="37" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">4</e>
+          <e type="operator" args="1">-</e>
+          <e type="bracket">(</e>
+          <e type="operand">6</e>
+          <e type="operator" args="2">^</e>
+          <e type="function" args="1">sqrt</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">64</e>
+        </result>
+      </math>
+    </region>
+    <region id="17" left="225" top="468" width="114" height="37" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">4</e>
+          <e type="operator" args="1">-</e>
+          <e type="bracket">(</e>
+          <e type="operand">6</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">3</e>
+          <e type="function" args="2">nthroot</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">16</e>
+        </result>
+      </math>
+    </region>
+    <region id="18" left="108" top="513" width="92" height="50" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">4</e>
+          <e type="operand">3</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="1">-</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">8</e>
+          <e type="operator" args="1">-</e>
+        </result>
+      </math>
+    </region>
+    <region id="19" left="108" top="558" width="118" height="37" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">4</e>
+          <e type="operator" args="1">-</e>
+          <e type="bracket">(</e>
+          <e type="operand">3</e>
+          <e type="operator" args="2">^</e>
+          <e type="function" args="1">sqrt</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">8</e>
+          <e type="operand">i</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+  </regions>
+</worksheet>

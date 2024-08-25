@@ -1,4 +1,0 @@
-xcen,CENTER,10,1
-xhid,HIDDEN,20,2
-xcon,Continuous,1,1
-xbyl,Bylayer,1,1

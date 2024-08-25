@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="0.99.7610.506"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="96">
+    <identity>
+      <id>91e09766-2700-46e7-9db6-5f9dd40b4be1</id>
+      <revision>18</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="9" orientation="Portrait" width="827" height="1169" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="0.99.7610.506" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="Math Region" version="0.99.7610.506" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="Custom Functions" version="1.1.7486.2690" guid="18dadffd-79a3-4cf9-aee1-d66deb0ea720" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region left="0" top="0" width="54" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">a</e>
+          <e type="operand">10</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="18" width="54" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">b</e>
+          <e type="operand">23</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="36" width="78" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Base</e>
+          <e type="operand">10</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="54" width="223" height="56" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="eng">
+          <p fontName="Arial">Результат конкатинации для a,b∈N</p>
+        </description>
+        <input>
+          <e type="operand">C</e>
+          <e type="operand">a</e>
+          <e type="operand">Base</e>
+          <e type="operand">b</e>
+          <e type="function" args="1">ln</e>
+          <e type="operand">Base</e>
+          <e type="function" args="1">ln</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">+</e>
+          <e type="function" args="1">Floor</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">b</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="108" width="68" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">C</e>
+        </input>
+        <result action="symbolic">
+          <e type="operand">1023</e>
+        </result>
+      </math>
+    </region>
+    <region top="144" color="#000000">
+      <area single="true" collapsed="true">
+        <title lang="rus">
+          <p fontName="Arial"></p>
+        </title>
+      </area>
+    </region>
+    <region left="0" top="162" width="70" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">a</e>
+          <e type="operand">10.1</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="180" width="78" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">b</e>
+          <e type="operand">0.023</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="198" width="86" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Base</e>
+          <e type="operand">100</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="216" width="240" height="60" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="eng">
+          <p fontName="Arial">Результат конкатинации для b&lt;1</p>
+        </description>
+        <input>
+          <e type="operand">C</e>
+          <e type="operand">a</e>
+          <e type="operand">Base</e>
+          <e type="operand">1</e>
+          <e type="operand">b</e>
+          <e type="operand">Base</e>
+          <e type="function" args="2">log</e>
+          <e type="function" args="1">Floor</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">b</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="270" width="84" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">C</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">10.123</e>
+        </result>
+      </math>
+    </region>
+  </regions>
+</worksheet>

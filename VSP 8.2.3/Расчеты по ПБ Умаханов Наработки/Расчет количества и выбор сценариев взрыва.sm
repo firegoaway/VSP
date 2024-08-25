@@ -1,0 +1,2017 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="1.0.8348.30405"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="96">
+    <identity>
+      <id>db4d06d1-ab69-4d0d-9826-b3d7136a164e</id>
+      <revision>543</revision>
+    </identity>
+    <metadata lang="rus">
+      <author>Umakhan</author>
+    </metadata>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <approximateEqualAccuracy>0</approximateEqualAccuracy>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="9" orientation="Portrait" width="827" height="1169" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="1.0.8348.30405" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="MathRegion" version="1.11.8348.30405" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="PictureRegion" version="1.10.8348.30405" guid="06b5df04-393e-4be7-9107-305196fcb861" />
+      <assembly name="SpecialFunctions" version="1.12.8348.30405" guid="2814e667-4e12-48b1-8d51-194e480eabc5" />
+      <assembly name="TextRegion" version="1.11.8348.30405" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+      <assembly name="AreaRegion" version="1.11.8348.30405" guid="4974b228-4974-44cf-8274-bf2936b4a766" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region left="0" top="0" width="747" height="40" color="#000000" fontSize="11">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="11">
+        <content>
+          <p style="font-weight: bold;">Для определения количества сценариев используются критерии значимости (опасности) каждого отдельного сценария.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="45" width="379" height="24" color="#000000" fontSize="11">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p style="font-size: 11px; font-weight: bold;">Критерии выбора наиболее взрывоопасного сценария:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="72" width="476" height="24" color="#000000" fontSize="11">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="11">
+        <content>
+          <p>1. По количеству участвующего в аварии технологическогооборудования</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="99" width="363" height="104" color="#000000" fontSize="11">
+      <text lang="rus" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>
+            <span style="font-family: Times New Roman; font-size: 11px;">2. По наиболее опасному фактору взрыва:</span>
+            <br />
+            <span style="font-family: Times New Roman; font-size: 11px; font-style: italic;">Q) по мощности тепловыделения;</span>
+            <span />
+            <br />
+            <span style="font-family: Times New Roman; font-size: 11px; font-style: italic;">T) по токсичности смеси на фроне волны давления;</span>
+            <span />
+            <br />
+            <span style="font-family: Times New Roman; font-size: 11px; font-style: italic;">S) по интенсивности фазы сжатия;</span>
+            <span />
+            <br />
+            <span style="font-family: Times New Roman; font-size: 11px; font-style: italic;">V) по скорости волны давления;</span>
+            <span />
+            <br />
+            <span style="font-family: Times New Roman; font-size: 11px; font-style: italic;">F) по осколочно-арматурному составу волны давления.</span>
+            <span />
+          </p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="207" width="727" height="92" color="#000000" fontSize="11" isBreakable="false">
+      <text lang="rus" width="727" fontFamily="Times New Roman" fontSize="11">
+        <content>
+          <p>3. По характеру операционности технологического процесса:<br /><span style="font-style: italic;">М1) Ручной;</span><br /><span style="font-style: italic;">М2) Полуавтоматический;</span><br /><span style="font-style: italic;">М3) Автоматизированный;</span><br /><span style="font-style: italic;">М4) Автоматический.</span></p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="306" width="442" height="88" color="#000000" fontSize="11">
+      <text lang="rus" width="435" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>
+            <span style="font-family: Times New Roman; font-size: 11px;">4. По признакам предельных состояний строительных конструкций:</span>
+            <br />
+            <span style="font-style: italic; font-family: Times New Roman; font-size: 11px;">R) потеря несущей способности;</span>
+            <span />
+            <br />
+            <span style="font-style: italic; font-size: 11px; font-family: Times New Roman;">E) потеря целостности;</span>
+            <span />
+            <br />
+            <span style="font-style: italic; font-family: Times New Roman; font-size: 11px;">I) потеря теплоизолирующей способности;</span>
+            <span />
+            <br />
+            <span style="font-style: italic; font-family: Times New Roman; font-size: 11px;">S) потеря газодымонепроницаемости.</span>
+            <span />
+          </p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="405" width="308" height="24" color="#000000" fontSize="11">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="11">
+        <content>
+          <p style="font-weight: bold;">Критерии выбора инициирующих событий:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="441" width="454" height="104" color="#000000" fontSize="11" isBreakable="false">
+      <text lang="rus" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>
+            <span style="font-family: Times New Roman; font-size: 11px;">1. По классу пожарной и/или взрывопожарной опасности помещений:</span>
+            <br />
+            <span style="font-style: italic; font-family: Times New Roman; font-size: 11px;">А) по пожароопасности со значительной взрывоопасностью;</span>
+            <span />
+            <br />
+            <span style="font-style: italic; font-family: Times New Roman; font-size: 11px;">Б) по пожароопасности с умеренной взрывоопасностью;</span>
+            <span />
+            <br />
+            <span style="font-style: italic; font-family: Times New Roman; font-size: 11px;">В1) по высокой пожароопасности;</span>
+            <span />
+            <br />
+            <span style="font-style: italic; font-family: Times New Roman; font-size: 11px;">В2) по умеренной пожароопасности;</span>
+            <span />
+            <br />
+            <span style="font-style: italic; font-family: Times New Roman; font-size: 11px;">В3) по средней пожароопасности.</span>
+            <span />
+          </p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="549" width="218" height="109" color="#000000" fontSize="11">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p style="font-size: 11px;">2. По составу горючей нагрузки:<br /><span style="font-style: italic;">а) ТГМ;</span><br /><span style="font-style: italic;">б) ГГ;</span><br /><span style="font-style: italic;">в) ЛВЖ;</span><br /><span style="font-style: italic;">г) ГЖ;</span><br /><span style="font-style: italic;">д) Пыли.</span></p>
+        </content>
+      </text>
+    </region>
+    <region top="828" color="#000000">
+      <area single="true" collapsed="true" />
+    </region>
+    <region left="0" top="846" width="754" height="40" color="#000000" fontSize="11">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="11">
+        <content>
+          <p style="font-weight: bold;">Множество всех сценариев, которые подлежат рассмотрению при моделировании пожара, можно представить в виде мультинома, исключающего взаимосочетания полиномов:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="891" width="250" height="76" color="#000000" fontSize="11">
+      <math>
+        <input>
+          <e type="operand">n</e>
+          <e type="operator" args="1">!</e>
+          <e type="operand">k</e>
+          <e type="operator" args="1">!</e>
+          <e type="bracket">(</e>
+          <e type="operand">n</e>
+          <e type="operand">k</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="1">!</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">a</e>
+          <e type="operand">n</e>
+          <e type="operand">k</e>
+          <e type="operator" args="2">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">b</e>
+          <e type="operand">k</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">k</e>
+          <e type="operand">0</e>
+          <e type="operand">n</e>
+          <e type="function" args="4">sum</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="972" width="755" height="74" color="#000000" fontSize="11">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="11">
+        <content>
+          <p>где, k - число событий (операнд),<br />n - сумма возможных комбинаций критериев или количество событий, инициирующих пожароопасную ситуацию, не являющихся взаимосочетаемыми (ab≠ba),<br />a и b - число критериев в событии k.</p>
+        </content>
+      </text>
+    </region>
+    <region top="1053" color="#000000">
+      <area single="true" collapsed="true" />
+    </region>
+    <region left="0" top="1071" width="730" height="24" color="#000000" fontSize="11">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="11">
+        <content>
+          <p>Представим объект с четырьмя пожаровзрывоопасными зонами, взрывоопасность которых требуется определить.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="1098" width="180" height="24" color="#000000" fontSize="11">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="11">
+        <content>
+          <p>Пронумеруем помещения:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="1125" width="487" height="333" color="#000000">
+      <picture>
+        <raw format="png" encoding="base64">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</raw>
+      </picture>
+    </region>
+    <region left="0" top="1485" width="750" height="116" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>В помещении происходят некоторые технологические процессы. На участке № 1 находится оборудование, работающее как с ЛВЖ/ГЖ так и с газами. На участке № 2 находится оборудование, которое транспортирует полученные на участке № 3 полезные вещества и материалы в жидком и газообразном состоянии. Участок № 3 обслуживается участками № 4 и № 5. На участках № 4 и № 5 преобладающей горючей нагрузкой являются ТГМ, которые затем в полуавтоматическом режиме смешиваются с жидкими реагентами, получаяя некоторые принципиально новые вещества во взвешенном состоянии.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="1602" width="453" height="44" color="#000000" fontSize="12">
+      <text lang="rus" width="453" fontFamily="Times New Roman" fontSize="11">
+        <content>
+          <p style="font-weight: normal; font-size: 12px;">Таким образом имеем всего <span style="font-weight: bold;">2 варианта</span> развития аварийной взрывоопасной ситуации. Обозначим их K1^ и K1-&gt;</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="1647" width="637" height="26" color="#000000" fontSize="12">
+      <text lang="rus" width="637" fontFamily="Times New Roman" fontSize="11">
+        <content>
+          <p style="font-size: 12px;">Так как варианта всего два, то число их комбинаций, при условии ab≠ba, равно 1.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="1674" width="747" height="58" color="#000000" fontSize="11">
+      <text lang="rus" width="736" fontFamily="Times New Roman" fontSize="11">
+        <content>
+          <p>Пожарную нагрузку примем за ТГМ (твёрдые горючие материалы) + ЛВЖ + ГГ. Она может быть наиболее опасна по одному или нескольким из <span style="font-weight: bold; font-size: 12px;">пяти</span> параметров QTSVF. Обозначим инициирующие события: K1Q, K1T, K1S, K1V, K1F.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="1728" width="685" height="44" color="#000000" fontSize="12">
+      <text lang="rus" width="685" fontFamily="Times New Roman" fontSize="11">
+        <content>
+          <p style="font-size: 12px;">Так как инициирующих событий всего 5, и наиболее опасные условия взрыва будут достигнуты при числе одновременно работающих вариантов ≥ 1, то число комбинаций будет равно: </p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="1764" width="83" height="47" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">5</e>
+          <e type="operator" args="1">!</e>
+          <e type="operand">1</e>
+          <e type="operator" args="1">!</e>
+          <e type="operator" args="2">/</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">120</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="1809" width="728" height="44" color="#000000" fontSize="12">
+      <text lang="rus" width="720" fontFamily="Times New Roman" fontSize="11">
+        <content>
+          <p style="font-size: 12px;">Каждому инициирующему событию K может соответствовать один или несколько вариантов развития взрыва C. Сумме взаимонесочетающихся событий будет соответствовать количество сценариев пожара.</p>
+        </content>
+      </text>
+    </region>
+    <region top="2115" color="#000000">
+      <area single="true" collapsed="true" />
+    </region>
+    <region left="0" top="2133" width="377" height="24" color="#000000" fontSize="11" isBreakable="false">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="11">
+        <content>
+          <p>Расчитаем количество сценариев взрыва для участка № 1:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="2160" width="84" height="25" color="#000000" fontSize="11">
+      <math>
+        <input>
+          <e type="operand">K1\005E\</e>
+          <e type="operand">K1Q</e>
+          <e type="operator" args="2">+</e>
+        </input>
+      </math>
+    </region>
+    <region left="108" top="2160" width="93" height="25" color="#000000" fontSize="11">
+      <math>
+        <input>
+          <e type="operand">K1\002D\\003E\</e>
+          <e type="operand">K1Q</e>
+          <e type="operator" args="2">+</e>
+        </input>
+      </math>
+    </region>
+    <region left="234" top="2160" width="62" height="61" color="#000000" fontSize="36">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="11">
+        <content>
+          <p style="font-size: 36px;">... </p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="2178" width="84" height="25" color="#000000" fontSize="11">
+      <math>
+        <input>
+          <e type="operand">K1\005E\</e>
+          <e type="operand">K1T</e>
+          <e type="operator" args="2">+</e>
+        </input>
+      </math>
+    </region>
+    <region left="108" top="2178" width="93" height="25" color="#000000" fontSize="11">
+      <math>
+        <input>
+          <e type="operand">K1\002D\\003E\</e>
+          <e type="operand">K1T</e>
+          <e type="operator" args="2">+</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="2196" width="84" height="25" color="#000000" fontSize="11">
+      <math>
+        <input>
+          <e type="operand">K1\005E\</e>
+          <e type="operand">K1S</e>
+          <e type="operator" args="2">+</e>
+        </input>
+      </math>
+    </region>
+    <region left="108" top="2196" width="93" height="25" color="#000000" fontSize="11">
+      <math>
+        <input>
+          <e type="operand">K1\002D\\003E\</e>
+          <e type="operand">K1S</e>
+          <e type="operator" args="2">+</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="2214" width="84" height="25" color="#000000" fontSize="11">
+      <math>
+        <input>
+          <e type="operand">K1\005E\</e>
+          <e type="operand">K1V</e>
+          <e type="operator" args="2">+</e>
+        </input>
+      </math>
+    </region>
+    <region left="108" top="2214" width="93" height="25" color="#000000" fontSize="11">
+      <math>
+        <input>
+          <e type="operand">K1\002D\\003E\</e>
+          <e type="operand">K1V</e>
+          <e type="operator" args="2">+</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="2232" width="84" height="25" color="#000000" fontSize="11">
+      <math>
+        <input>
+          <e type="operand">K1\005E\</e>
+          <e type="operand">K1F</e>
+          <e type="operator" args="2">+</e>
+        </input>
+      </math>
+    </region>
+    <region left="108" top="2232" width="93" height="25" color="#000000" fontSize="11">
+      <math>
+        <input>
+          <e type="operand">K1\002D\\003E\</e>
+          <e type="operand">K1F</e>
+          <e type="operator" args="2">+</e>
+        </input>
+      </math>
+    </region>
+    <region left="297" top="2232" width="217" height="51" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">n</e>
+          <e type="operator" args="1">!</e>
+          <e type="operand">k</e>
+          <e type="operand">1</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="1">!</e>
+          <e type="operand">k</e>
+          <e type="operand">2</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="1">!</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">#</e>
+          <e type="operand">#</e>
+          <e type="function" args="2">range</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">k</e>
+          <e type="operand">120</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="1">!</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">/</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="2259" width="93" height="25" color="#000000" fontSize="11">
+      <math>
+        <input>
+          <e type="operand">K1\005E\</e>
+          <e type="operand">K1QT</e>
+          <e type="operator" args="2">+</e>
+        </input>
+      </math>
+    </region>
+    <region left="117" top="2259" width="102" height="25" color="#000000" fontSize="11">
+      <math>
+        <input>
+          <e type="operand">K1\002D\\003E\</e>
+          <e type="operand">K1QT</e>
+          <e type="operator" args="2">+</e>
+        </input>
+      </math>
+    </region>
+    <region left="234" top="2259" width="62" height="61" color="#000000" fontSize="36" isBreakable="false">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="11">
+        <content>
+          <p style="font-size: 36px;">... </p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="2277" width="93" height="25" color="#000000" fontSize="11">
+      <math>
+        <input>
+          <e type="operand">K1\005E\</e>
+          <e type="operand">K1QS</e>
+          <e type="operator" args="2">+</e>
+        </input>
+      </math>
+    </region>
+    <region left="117" top="2277" width="102" height="25" color="#000000" fontSize="11">
+      <math>
+        <input>
+          <e type="operand">K1\002D\\003E\</e>
+          <e type="operand">K1QS</e>
+          <e type="operator" args="2">+</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="2295" width="93" height="25" color="#000000" fontSize="11">
+      <math>
+        <input>
+          <e type="operand">K1\005E\</e>
+          <e type="operand">K1QV</e>
+          <e type="operator" args="2">+</e>
+        </input>
+      </math>
+    </region>
+    <region left="117" top="2295" width="102" height="25" color="#000000" fontSize="11">
+      <math>
+        <input>
+          <e type="operand">K1\002D\\003E\</e>
+          <e type="operand">K1QV</e>
+          <e type="operator" args="2">+</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="2313" width="93" height="25" color="#000000" fontSize="11">
+      <math>
+        <input>
+          <e type="operand">K1\005E\</e>
+          <e type="operand">K1QF</e>
+          <e type="operator" args="2">+</e>
+        </input>
+      </math>
+    </region>
+    <region left="117" top="2313" width="102" height="25" color="#000000" fontSize="11">
+      <math>
+        <input>
+          <e type="operand">K1\002D\\003E\</e>
+          <e type="operand">K1QF</e>
+          <e type="operator" args="2">+</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="2358" width="596" height="24" color="#000000" fontSize="11">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="11">
+        <content>
+          <p>Для упрощения восприятия можно представить варианты каждого критерия в виде событий:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="2385" width="95" height="24" color="#000000" fontSize="11">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="11">
+        <content>
+          <p>^ -&gt;   QTSVF</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="2403" width="21" height="25" color="#000000" fontSize="11">
+      <math>
+        <input>
+          <e type="operand">a</e>
+        </input>
+      </math>
+    </region>
+    <region left="54" top="2403" width="21" height="25" color="#000000" fontSize="11">
+      <math>
+        <input>
+          <e type="operand">b</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="2439" width="188" height="24" color="#000000" fontSize="11">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="11">
+        <content>
+          <p>Событий по критерию а = 2</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="2457" width="188" height="24" color="#000000" fontSize="11">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="11">
+        <content>
+          <p>Событий по критерию b = 5</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="2484" width="379" height="24" color="#000000" fontSize="11">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="11">
+        <content>
+          <p>Сумму их комбинаций можно представить в виде бинома:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="2502" width="102" height="25" color="#000000" fontSize="11">
+      <math>
+        <input>
+          <e type="operand">\005E\\002D\\003E\</e>
+          <e type="operand">QTSVF</e>
+          <e type="operator" args="2">+</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="2520" width="21" height="25" color="#000000" fontSize="11">
+      <math>
+        <input>
+          <e type="operand">a</e>
+        </input>
+      </math>
+    </region>
+    <region left="54" top="2520" width="21" height="25" color="#000000" fontSize="11">
+      <math>
+        <input>
+          <e type="operand">b</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="2538" width="38" height="25" color="#000000" fontSize="11">
+      <math>
+        <input>
+          <e type="operand">или</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="2556" width="137" height="25" color="#000000" fontSize="11">
+      <math>
+        <input>
+          <e type="operand">K1\005E\\002D\\003E\</e>
+          <e type="operand">K1QTSVF</e>
+          <e type="operator" args="2">+</e>
+        </input>
+      </math>
+    </region>
+    <region left="18" top="2574" width="21" height="25" color="#000000" fontSize="11">
+      <math>
+        <input>
+          <e type="operand">a</e>
+        </input>
+      </math>
+    </region>
+    <region left="90" top="2574" width="21" height="25" color="#000000" fontSize="11">
+      <math>
+        <input>
+          <e type="operand">b</e>
+        </input>
+      </math>
+    </region>
+    <region top="2619" color="#000000">
+      <area single="true" collapsed="true" />
+    </region>
+    <region left="0" top="2637" width="759" height="56" color="#000000" fontSize="11">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="11">
+        <content>
+          <p>Найдем количество сценариев, инициирующими событиями которых являются отказ технологического оборудования и затравка горючей нагрузки во взвешенной смеси, а также различные инициирующие события, при которых могут погибнуть люди:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="2691" width="46" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">a</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="54" top="2691" width="46" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">b</e>
+          <e type="operand">5</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="108" top="2691" width="46" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">n</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="2718" width="293" height="69" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">С</e>
+          <e type="operand">n</e>
+          <e type="operator" args="1">!</e>
+          <e type="operand">k</e>
+          <e type="operator" args="1">!</e>
+          <e type="bracket">(</e>
+          <e type="operand">n</e>
+          <e type="operand">k</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="1">!</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">a</e>
+          <e type="operand">n</e>
+          <e type="operand">k</e>
+          <e type="operator" args="2">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">b</e>
+          <e type="operand">k</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">k</e>
+          <e type="operand">0</e>
+          <e type="operand">n</e>
+          <e type="function" args="4">sum</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">49</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="2799" width="439" height="24" color="#000000" fontSize="11">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="11">
+        <content>
+          <p>что будет тождественно равно выражению в виде бинома Ньютона:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="2826" width="102" height="35" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">a</e>
+          <e type="operand">b</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operand">n</e>
+          <e type="operator" args="2">^</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">49</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="2862" width="740" height="56" color="#000000" fontSize="11">
+      <text lang="rus" width="740" fontFamily="Times New Roman" fontSize="11">
+        <content>
+          <p style="font-weight: bold;">Количество сценариев возможной гибели людей при заданных критериях равно 49. Из них, по наименьшей операнде, необходимо выбрать все сценарии, приводящие к гибели наибольшего количества людей за наименьшее время.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="2916" width="480" height="24" color="#000000" fontSize="11">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="11">
+        <content>
+          <p>Сценариев, удовлетворяющих вновь введённому критерию, будет всего 2:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="2934" width="120" height="25" color="#000000" fontSize="11">
+      <math>
+        <input>
+          <e type="operand">K1\005E\</e>
+          <e type="operand">K1QTSVF</e>
+          <e type="operator" args="2">+</e>
+        </input>
+      </math>
+    </region>
+    <region left="117" top="2934" width="21" height="25" color="#000000" fontSize="11">
+      <math>
+        <input>
+          <e type="operand">и</e>
+        </input>
+      </math>
+    </region>
+    <region left="135" top="2934" width="128" height="25" color="#000000" fontSize="11">
+      <math>
+        <input>
+          <e type="operand">K1\002D\\003E\</e>
+          <e type="operand">K1QTSVF</e>
+          <e type="operator" args="2">+</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="2952" width="81" height="24" color="#000000" fontSize="11">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="11">
+        <content>
+          <p>Поскольку</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="2970" width="46" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">a</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="45" top="2970" width="46" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">b</e>
+          <e type="operand">5</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="90" top="2970" width="46" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">n</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="2988" width="30" height="23" color="#000000" fontSize="10">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p>то </p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="3006" width="130" height="35" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">C</e>
+          <e type="operand">a</e>
+          <e type="operand">b</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operand">n</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">49</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="3051" width="480" height="24" color="#000000" fontSize="11">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p style="font-size: 11px;">Далее необходимо произвести те же манипуляции для участков 2, 3, 4 и 5.</p>
+        </content>
+      </text>
+    </region>
+    <region top="3087" color="#000000">
+      <area single="true" collapsed="true" />
+    </region>
+    <region left="0" top="3105" width="746" height="44" color="#000000" fontSize="12">
+      <text lang="rus" width="746" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p style="font-size: 12px;">Представим, что характерным отличием участка № 2 от участка № 1 будет наличие на участке № 2 невзрывоопасной концентрации горючих веществ и материалов.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="3141" width="437" height="26" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p style="font-size: 12px;">Тогда для участка № 2 выделим ряд взрывоопасных событий:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="3159" width="668" height="134" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p style="font-size: 12px;">1) Квазимгновенная детонация резервуара;<br />2) Стравливание искрогорючей взвешенной смеси в участок № 1 с последующей детонацией (детонационный перенос);<br />3) Стравливание искрогорючей взвешенной смеси в участок № 3 с последующей детонацией (детонационный перенос);<br />4) Горение без инициации взрыва с образованием факела на границе зон с разным давлением с последующей детонацией по критерию T.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="3294" width="736" height="62" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p style="font-size: 12px;">
+            <span style="font-size: 12px;">Поскольку детонация происходит при всех возможных обстоятельствах и являеться лишь функцией времени, когда очаг взрыва размещен на участке № 2, то её справедливо опустить, так как она будет фигурировать в формуле в виде инициирующей постоянной </span>
+            <span style="font-style: italic; font-size: 11px;">C,</span>
+            <span style="font-style: normal; font-size: 11px;"> всегда равной 1 из-за отсутствия комбинаций.</span>
+          </p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="3357" width="365" height="26" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p style="font-size: 12px;">Опасное событие 2 обозначим как K2M1M2M3M4.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="3375" width="281" height="26" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p style="font-size: 12px;">Опасное событие 3 обозначим как K2T</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="3402" width="265" height="26" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p style="font-size: 12px;">Число вариантов равития события 2:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="3420" width="60" height="27" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">2</e>
+          <e type="operator" args="1">!</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">2</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="3438" width="89" height="27" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">7</e>
+          <e type="operator" args="1">!</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">5040</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="3456" width="271" height="26" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p style="font-size: 12px;">Число вариантов развития события 3:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="3483" width="450" height="26" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p style="font-size: 12px;">Число возможных взаимонесочетаемых сценариев будет равно:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="3519" width="93" height="47" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">7</e>
+          <e type="operator" args="1">!</e>
+          <e type="operand">2</e>
+          <e type="operator" args="1">!</e>
+          <e type="operator" args="2">/</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">2520</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="3582" width="625" height="26" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p style="font-size: 12px;">Найдем все сценарии, которые наиболее вероятно приведут к гибели хотя бы 1 человека:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="3627" width="53" height="27" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">a</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="54" top="3627" width="53" height="27" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">b</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="108" top="3627" width="53" height="27" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">n</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="171" top="3627" width="550" height="62" color="#000000" fontSize="12">
+      <text lang="rus" width="546" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p style="font-size: 12px;">Значимым параметром по классу опасности в-ва является T.<br />Значимым параметром по развитию аварии является операционный критерий полуавтоматического режима.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="3654" width="141" height="41" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">C</e>
+          <e type="operand">a</e>
+          <e type="operand">b</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operand">n</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">4</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="3690" width="742" height="62" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p style="font-weight: bold; font-size: 12px;">Множеством всех сценариев, при которых очаг взрыва размещен на одном из рассмотренных участков 1 и 2 и при которых возможна гибель хотя бы 1 человека, будет сумма всех сценариев для рассмотренных участков:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="3753" width="59" height="43" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">C</e>
+          <e type="function" args="1">sum</e>
+        </input>
+      </math>
+    </region>
+    <region left="72" top="3762" width="112" height="39" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">C</e>
+          <e type="operand">C</e>
+          <e type="operand">1</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">C</e>
+          <e type="operand">2</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="162" top="3762" width="23" height="26" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p style="font-size: 12px;">=</p>
+        </content>
+      </text>
+    </region>
+    <region left="180" top="3762" width="131" height="27" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">C</e>
+          <e type="operand">49</e>
+          <e type="operand">4</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">53</e>
+        </result>
+      </math>
+    </region>
+    <region top="3888" color="#000000">
+      <area single="true" collapsed="true" />
+    </region>
+    <region left="0" top="3906" width="689" height="80" color="#000000" fontSize="12">
+      <text lang="rus" width="689" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p style="font-size: 12px;">Описанный выше способ оценки объективности выбранных сценариев работает также с мультиномами. Так, например, когда инициации взрыва соответствует параллельное или последовательное развитие аварии на нескольких технологических участках, следует применять мультиномиальный способ.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="3978" width="374" height="26" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p style="font-size: 12px;">Пусть х соотсветсвует число критериев в событии k:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="4005" width="243" height="52" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">x</e>
+          <e type="operand">k</e>
+          <e type="operand">1</e>
+          <e type="function" args="2">el</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">x</e>
+          <e type="operand">k</e>
+          <e type="operand">2</e>
+          <e type="function" args="2">el</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">#</e>
+          <e type="operand">#</e>
+          <e type="function" args="2">range</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">x</e>
+          <e type="operand">k</e>
+          <e type="operand">m</e>
+          <e type="function" args="2">el</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">+</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="4059" width="739" height="44" color="#000000" fontSize="12">
+      <text lang="rus" width="739" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p style="font-size: 12px;">тогда каждому отдельному сценарию будет соответствовать полином Ньютона, как возведение в степень суммы определенного числа событий:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="4104" width="748" height="95" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">n</e>
+          <e type="operator" args="1">!</e>
+          <e type="operand">k</e>
+          <e type="operand">1</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="1">!</e>
+          <e type="operand">k</e>
+          <e type="operand">2</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="1">!</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">#</e>
+          <e type="operand">#</e>
+          <e type="function" args="2">range</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">k</e>
+          <e type="operand">m</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="1">!</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">x</e>
+          <e type="operand">1</e>
+          <e type="function" args="2">el</e>
+          <e type="bracket">(</e>
+          <e type="operand">k</e>
+          <e type="operand">1</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">x</e>
+          <e type="operand">2</e>
+          <e type="function" args="2">el</e>
+          <e type="bracket">(</e>
+          <e type="operand">k</e>
+          <e type="operand">2</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">#</e>
+          <e type="operand">#</e>
+          <e type="function" args="2">range</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">x</e>
+          <e type="operand">m</e>
+          <e type="function" args="2">el</e>
+          <e type="bracket">(</e>
+          <e type="operand">k</e>
+          <e type="operand">m</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">k</e>
+          <e type="operand">1</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">k</e>
+          <e type="operand">2</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">#</e>
+          <e type="operand">#</e>
+          <e type="function" args="2">range</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">k</e>
+          <e type="operand">m</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">n</e>
+          <e type="operand">n</e>
+          <e type="function" args="4">sum</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="4203" width="41" height="27" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">или</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="4230" width="224" height="54" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">x</e>
+          <e type="operand">1</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">x</e>
+          <e type="operand">2</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">#</e>
+          <e type="operand">#</e>
+          <e type="function" args="2">range</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">x</e>
+          <e type="operand">m</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operand">n</e>
+          <e type="operator" args="2">^</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="4302" width="548" height="26" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p style="font-size: 12px;">Найдем количество всех сценариев для помещения 3 по заданным критериям:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="4329" width="69" height="74" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">x</e>
+          <e type="operand">2</e>
+          <e type="operand">5</e>
+          <e type="operand">4</e>
+          <e type="operand">3</e>
+          <e type="operand">1</e>
+          <e type="function" args="5">mat</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="72" top="4347" width="53" height="27" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">n</e>
+          <e type="operand">3</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="4392" width="207" height="53" color="#000000" fontSize="12">
+      <math exponentialThreshold="15">
+        <input>
+          <e type="operand">x</e>
+          <e type="operand">1</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">x</e>
+          <e type="operand">2</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">x</e>
+          <e type="operand">3</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operand">n</e>
+          <e type="operator" args="2">^</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1331</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="4437" width="470" height="104" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p style="font-size: 12px;">где \[REGION[a50307d687304e35bf3d3a07e654a671]]\ - число событий по критерию блокирования выходов,<br />\[REGION[12ba00e05a82414b8f57319461625338]]\ - число событий по критерию развития горения,<br />\[REGION[60b6f451f8ae4390a61181a396030243]]\ - число событий по критерию блокирования путей эвакуации.</p>
+        </content>
+        <regions>
+          <region id="a50307d687304e35bf3d3a07e654a671" left="28" top="0" width="35" height="39" color="#000000" fontSize="12">
+            <math>
+              <input>
+                <e type="operand">x</e>
+                <e type="operand">1</e>
+                <e type="function" args="2">el</e>
+              </input>
+            </math>
+          </region>
+          <region id="12ba00e05a82414b8f57319461625338" left="2" top="32" width="35" height="39" color="#000000" fontSize="12">
+            <math>
+              <input>
+                <e type="operand">x</e>
+                <e type="operand">2</e>
+                <e type="function" args="2">el</e>
+              </input>
+            </math>
+          </region>
+          <region id="60b6f451f8ae4390a61181a396030243" left="2" top="64" width="35" height="39" color="#000000" fontSize="12">
+            <math>
+              <input>
+                <e type="operand">x</e>
+                <e type="operand">3</e>
+                <e type="function" args="2">el</e>
+              </input>
+            </math>
+          </region>
+        </regions>
+      </text>
+    </region>
+    <region left="0" top="4545" width="753" height="122" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p style="font-size: 12px;">Наиболее опасным событием по критерию блокирования путей эвакуации будет блокирование участка коридора, ведущего к выходу ^ из помещения 1. Тогда \[REGION[eebc37004b46424e8646960a720ff938]]\ = 1. Наиболее опасными фактороми пожара будут дымообразующая способность и токсичность, значит \[REGION[2e4e7fcd46d9446986d9171e7c1bdc05]]\ = 2. В течение времени эвакуации ни одни из выходов не блокируется, а значит \[REGION[6b4fb8fd77104522b2128d4f14596a75]]\ = 0. Подставим значения \[REGION[c41c114d0db54517bf985dcbd4c1fcd7]]\, \[REGION[db7a50a765d84f2885110ff9935b1838]]\ и \[REGION[5ce23680e599426abf4d50b4b2bf2c5a]]\ в полином.</p>
+        </content>
+        <regions>
+          <region id="eebc37004b46424e8646960a720ff938" left="380" top="18" width="35" height="39" color="#000000" fontSize="12">
+            <math>
+              <input>
+                <e type="operand">x</e>
+                <e type="operand">3</e>
+                <e type="function" args="2">el</e>
+              </input>
+            </math>
+          </region>
+          <region id="2e4e7fcd46d9446986d9171e7c1bdc05" left="414" top="50" width="35" height="39" color="#000000" fontSize="12">
+            <math>
+              <input>
+                <e type="operand">x</e>
+                <e type="operand">2</e>
+                <e type="function" args="2">el</e>
+              </input>
+            </math>
+          </region>
+          <region id="6b4fb8fd77104522b2128d4f14596a75" left="256" top="82" width="35" height="39" color="#000000" fontSize="12">
+            <math>
+              <input>
+                <e type="operand">x</e>
+                <e type="operand">1</e>
+                <e type="function" args="2">el</e>
+              </input>
+            </math>
+          </region>
+          <region id="c41c114d0db54517bf985dcbd4c1fcd7" left="462" top="82" width="35" height="39" color="#000000" fontSize="12">
+            <math>
+              <input>
+                <e type="operand">x</e>
+                <e type="operand">1</e>
+                <e type="function" args="2">el</e>
+              </input>
+            </math>
+          </region>
+          <region id="db7a50a765d84f2885110ff9935b1838" left="498" top="82" width="35" height="39" color="#000000" fontSize="12">
+            <math>
+              <input>
+                <e type="operand">x</e>
+                <e type="operand">2</e>
+                <e type="function" args="2">el</e>
+              </input>
+            </math>
+          </region>
+          <region id="5ce23680e599426abf4d50b4b2bf2c5a" left="543" top="82" width="35" height="39" color="#000000" fontSize="12">
+            <math>
+              <input>
+                <e type="operand">x</e>
+                <e type="operand">3</e>
+                <e type="function" args="2">el</e>
+              </input>
+            </math>
+          </region>
+        </regions>
+      </text>
+    </region>
+    <region left="0" top="4662" width="69" height="74" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">x</e>
+          <e type="operand">0</e>
+          <e type="operand">2</e>
+          <e type="operand">1</e>
+          <e type="operand">3</e>
+          <e type="operand">1</e>
+          <e type="function" args="5">mat</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="72" top="4680" width="53" height="27" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">n</e>
+          <e type="operand">3</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="4725" width="132" height="53" color="#000000" fontSize="12">
+      <math optimize="2" exponentialThreshold="15">
+        <input>
+          <e type="operand">0</e>
+          <e type="operand">x</e>
+          <e type="operand">2</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">x</e>
+          <e type="operand">3</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+        </input>
+      </math>
+    </region>
+    <region left="162" top="4725" width="144" height="53" color="#000000" fontSize="12">
+      <math exponentialThreshold="15">
+        <input>
+          <e type="operand">x</e>
+          <e type="operand">2</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">x</e>
+          <e type="operand">3</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operand">n</e>
+          <e type="operator" args="2">^</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">27</e>
+        </result>
+      </math>
+    </region>
+    <region left="135" top="4743" width="23" height="26" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p style="font-weight: bold; font-size: 12px;">=</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="4779" width="724" height="44" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p style="font-weight: bold; font-size: 12px;">Количество всех сценариев взрыва на участке № 3, являющихся значимыми для данного набора критериев, равно 27.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="4833" width="715" height="26" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p style="font-weight: bold; font-size: 12px;">Количество всех сценариев при размещении очага взрыва на учасиках 1, 2 и 3 найдем по сумме:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="4860" width="156" height="39" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">C</e>
+          <e type="operand">C</e>
+          <e type="operand">1</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">C</e>
+          <e type="operand">2</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">C</e>
+          <e type="operand">3</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="4896" width="169" height="27" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">C</e>
+          <e type="operand">49</e>
+          <e type="operand">4</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">27</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">80</e>
+        </result>
+      </math>
+    </region>
+    <region top="4959" color="#000000">
+      <area single="true" collapsed="true" />
+    </region>
+    <region left="0" top="4977" width="762" height="68" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p>Для приведения вышеизложенных рассуждений в осмысленный вид, важно уточнить, что выбранные сценарии взрыва должны быть значимыми по ряду стандартных признаков:<br />Например, подавляющее большинство взрывов сопровождается одновременно всеми опасными факторами - QTSVF. Исключение одного или нескольких из них в процессе развития не останавливает дефлаграцию.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="5040" width="90" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p>что означает:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="5058" width="434" height="24" color="#000000" fontSize="10">
+      <math optimize="2">
+        <input>
+          <e type="operand">K1QTSVF</e>
+          <e type="operand">K2QTSVF</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">K3QTSVF</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">K1QTSVF\007C\\007C\K2QTSVF\007C\\007C\K3QTSVF</e>
+          <e type="operator" args="2">≡</e>
+        </input>
+      </math>
+    </region>
+    <region left="432" top="5058" width="149" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="rus" width="149" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p>, где || - конкатинация.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="5076" width="748" height="68" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="rus" width="743" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p>Такие признаки можно назвать модальными. Пусть модальность зависит от числа событий, прямо или косвенно соотносящихся друг с другом по одному и тому же признаку. Тогда для оценки качества найденных сценариев, введём поправочный коэффициент. Назовём его коэффициентом модальности. Выполним перерасчет и найдем число наиболее значимых сценариев пожара,</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="5139" width="36" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p>где:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="5157" width="63" height="63" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">x</e>
+          <e type="operand">a</e>
+          <e type="operand">b</e>
+          <e type="operand">c</e>
+          <e type="operand">3</e>
+          <e type="operand">1</e>
+          <e type="function" args="5">mat</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="72" top="5175" width="46" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">n</e>
+          <e type="operand">3</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="135" top="5175" width="46" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">m</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="180" top="5175" width="334" height="25" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="rus" width="334" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p> , где \[REGION[680269fbad16454780589efb7f2f5391]]\ - коэффициент модальности.</p>
+        </content>
+        <regions>
+          <region id="680269fbad16454780589efb7f2f5391" left="34" top="0" width="20" height="24" color="#000000" fontSize="10">
+            <math>
+              <input>
+                <e type="operand">m</e>
+              </input>
+            </math>
+          </region>
+        </regions>
+      </text>
+    </region>
+    <region left="0" top="5220" width="48" height="23" color="#000000" fontSize="10">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p>тогда:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="5238" width="193" height="44" color="#000000" fontSize="10">
+      <math optimize="2" exponentialThreshold="15">
+        <input>
+          <e type="operand">x</e>
+          <e type="operand">1</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">x</e>
+          <e type="operand">2</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">x</e>
+          <e type="operand">3</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">m</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operand">n</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">C</e>
+          <e type="operand">m</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">≡</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="5283" width="721" height="38" color="#000000" fontSize="10">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p>Вернемся на несколько шагов назад, применим коэффициент модальности и отыщем множество всех значимых сценариев, подлежащих проверке.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="5319" width="369" height="23" color="#000000" fontSize="10">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p>Так для помещения 1 нахождение всех сценариев примет вид:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="5337" width="111" height="25" color="#000000" fontSize="11">
+      <math>
+        <input>
+          <e type="operand">K1\005E\</e>
+          <e type="operand">KQTSVF</e>
+          <e type="operator" args="2">+</e>
+        </input>
+      </math>
+    </region>
+    <region left="117" top="5337" width="21" height="25" color="#000000" fontSize="11">
+      <math>
+        <input>
+          <e type="operand">и</e>
+        </input>
+      </math>
+    </region>
+    <region left="135" top="5337" width="120" height="25" color="#000000" fontSize="11">
+      <math>
+        <input>
+          <e type="operand">K1\002D\\003E\</e>
+          <e type="operand">KQTSVF</e>
+          <e type="operator" args="2">+</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="5355" width="760" height="38" color="#000000" fontSize="10">
+      <text lang="rus" width="750" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p>где KQTSVF - результат конкатинации, обусловленной наличием взаимных соответствий между критериями развития горения по признаку модельности.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="5391" width="114" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="rus" width="114" fontFamily="Times New Roman" fontSize="11">
+        <content>
+          <p style="font-size: 10px;">Тогда поскольку</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="5409" width="54" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">a1</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="54" top="5409" width="54" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">b1</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="108" top="5409" width="54" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">n1</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="171" top="5409" width="54" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">m1</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="5427" width="30" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p>то </p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="5445" width="187" height="35" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">C1</e>
+          <e type="operand">a1</e>
+          <e type="operand">b1</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">m1</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operand">n1</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="5481" width="615" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p style="font-size: 10px;">Далее необходимо произвести те же манипуляции для участков 2, 3 и 4 с учетом модальности критериев.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="5499" width="96" height="23" color="#000000" fontSize="10">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p>Для участка 2:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="5517" width="54" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">a2</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="54" top="5517" width="54" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">b2</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="108" top="5517" width="54" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">n2</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="162" top="5517" width="54" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">m2</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="5535" width="187" height="35" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">C2</e>
+          <e type="operand">a2</e>
+          <e type="operand">b2</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">m2</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operand">n2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="5580" width="96" height="23" color="#000000" fontSize="10">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p>Для участка 3:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="5598" width="54" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">a3</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="54" top="5598" width="54" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">b3</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="108" top="5598" width="54" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">n3</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="162" top="5598" width="54" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">m3</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="5616" width="187" height="35" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">C2</e>
+          <e type="operand">a3</e>
+          <e type="operand">b3</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">m3</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operand">n3</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="5661" width="340" height="23" color="#000000" fontSize="10">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p>Для сценария взрыва на участке 4 добавим 4-й критерий:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="5679" width="52" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">K4REI</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="5697" width="166" height="23" color="#000000" fontSize="10">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p>Перечислим все критерии:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="5715" width="44" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">K4\002D\\003E\</e>
+        </input>
+      </math>
+    </region>
+    <region left="45" top="5715" width="68" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">K4QTSVF</e>
+        </input>
+      </math>
+    </region>
+    <region left="117" top="5715" width="140" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">K4M1M2M3M4НМНТНО</e>
+        </input>
+      </math>
+    </region>
+    <region left="261" top="5715" width="52" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">K4REI</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="5733" width="219" height="23" color="#000000" fontSize="10">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p>Обозначим их следующим образом:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="5751" width="44" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">K4\002D\\003E\</e>
+        </input>
+      </math>
+    </region>
+    <region left="45" top="5751" width="68" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">K4QTSVF</e>
+        </input>
+      </math>
+    </region>
+    <region left="117" top="5751" width="140" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">K4M1M2M3M4НМНТНО</e>
+        </input>
+      </math>
+    </region>
+    <region left="261" top="5751" width="52" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">K4REI</e>
+        </input>
+      </math>
+    </region>
+    <region left="9" top="5769" width="28" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">a4</e>
+        </input>
+      </math>
+    </region>
+    <region left="63" top="5769" width="28" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">b4</e>
+        </input>
+      </math>
+    </region>
+    <region left="171" top="5769" width="28" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">c4</e>
+        </input>
+      </math>
+    </region>
+    <region left="270" top="5769" width="28" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">d4</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="5787" width="585" height="23" color="#000000" fontSize="10">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="10">
+        <content>
+          <p>Найдем количество всех сценариев, удовлетворяющих заданным критериям, с учетом модальности:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="5805" width="54" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">a4</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="54" top="5805" width="54" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">b4</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="108" top="5805" width="54" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">c4</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="162" top="5805" width="54" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">d4</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="216" top="5805" width="54" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">n4</e>
+          <e type="operand">4</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="270" top="5805" width="54" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">m4</e>
+          <e type="operand">4</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="5823" width="256" height="35" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">C4</e>
+          <e type="operand">a4</e>
+          <e type="operand">b4</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">c4</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">d4</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">m4</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operand">n4</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1</e>
+        </result>
+      </math>
+    </region>
+    <region top="5868" color="#000000">
+      <area single="true" collapsed="true" />
+    </region>
+    <region left="0" top="5886" width="748" height="62" color="#000000" fontSize="12">
+      <text lang="rus" fontFamily="Times New Roman" fontSize="12">
+        <content>
+          <p>Следующим этапом необходимо произвести оценку риска воспламенения, основываясь на статистических показателях воспламеняемости технологических сред, частоте возникновения инициирующих событий (аварий, пожаров, взрывов).</p>
+        </content>
+      </text>
+    </region>
+  </regions>
+</worksheet>

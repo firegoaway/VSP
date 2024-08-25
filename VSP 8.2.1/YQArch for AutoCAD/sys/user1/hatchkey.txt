@@ -1,6 +1,0 @@
-hnt,¸Ö½î»ìÄıÍÁ,10,0,no,no
-hnt,¸Ö½î»ìÄıÍÁ,10,0,no,no
-ck,CORK,1.5,0,yes,yes
-sz,CROSS,10,45,no,no
-mjb,¼Ğ°å12Àå,12,0,yes,yes
-dxb,´óĞ¾°å12Àå,12,0,yes,yes

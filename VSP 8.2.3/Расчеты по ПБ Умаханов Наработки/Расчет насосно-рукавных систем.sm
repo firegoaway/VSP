@@ -1,0 +1,743 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="0.99.7822.147"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="96">
+    <identity>
+      <id>a9a0a259-11de-405a-8839-9940881b3e05</id>
+      <revision>68</revision>
+    </identity>
+    <metadata lang="rus">
+      <author>Umakhan</author>
+    </metadata>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="9" orientation="Portrait" width="827" height="1169" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="0.99.7822.147" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="MathRegion" version="1.11.7822.147" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="Custom Functions" version="1.1.7840.30466" guid="18dadffd-79a3-4cf9-aee1-d66deb0ea720" />
+      <assembly name="TextRegion" version="1.11.7822.147" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region left="0" top="0" width="254" height="23" border="true" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="rus" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="font-family: Courier New;">Расчет насосно-рукавных систем</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="18" width="246" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="rus" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="font-family: Courier New;">Для гладкоствольных насадков:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="45" width="134" height="26" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="rus">
+          <content>
+            <p>Расход жидкости при истечении из насадка по гидродинамическому закону</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">Q</e>
+          <e type="operand">μ</e>
+          <e type="operand">ω</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">2</e>
+          <e type="operand">g</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">H</e>
+          <e type="operator" args="2">*</e>
+          <e type="function" args="1">sqrt</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="72" width="62" height="24" color="#000000" fontSize="10">
+      <math optimize="2">
+        <description active="true" position="Right" lang="rus">
+          <content>
+            <p>ускорение свободного падения</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">g</e>
+          <e type="operand">9.8</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="99" width="46" height="24" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="rus">
+          <content>
+            <p>давление перед насадком, МПа</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">H</e>
+          <e type="operand">9</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="126" width="66" height="43" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="rus">
+          <content>
+            <p>коэффициент производительности насадка</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">p</e>
+          <e type="operand">Q</e>
+          <e type="operand">H</e>
+          <e type="function" args="1">sqrt</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="162" width="80" height="26" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="rus">
+          <content>
+            <p>практический расход жидкости при истечении из насадка</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">Q</e>
+          <e type="operand">p</e>
+          <e type="operand">H</e>
+          <e type="function" args="1">sqrt</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="189" width="54" height="24" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="rus">
+          <content>
+            <p>растояние от водоисточника до места пожара, м</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">l</e>
+          <e type="operand">15</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="216" width="119" height="43" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="rus">
+          <content>
+            <p>количество рукавов в рукавной линии, шт. 1,2 - коэф, учитывающий кривизну<br />прокладки рукавных линий, 20 - длина рукава, м</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">n</e>
+          <e type="operand">1.2</e>
+          <e type="operand">l</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">20</e>
+          <e type="operator" args="2">/</e>
+          <e type="function" args="1">Ceil</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="252" width="119" height="33" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="rus">
+          <content>
+            <p>потери напора в магистральной рукавной линии</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">Δhмл</e>
+          <e type="operand">n</e>
+          <e type="operand">S</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">Q</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="288" width="139" height="45" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="rus">
+          <content>
+            <p>Напор на разветвлении и рабочей линии во всех случаях не превышают 10 м</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">Δhр</e>
+          <e type="operand">Δhразв</e>
+          <e type="operand">3</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">Δhрл</e>
+          <e type="operand">7</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">2</e>
+          <e type="operand">1</e>
+          <e type="function" args="4">sys</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="333" width="86" height="33" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">H</e>
+          <e type="operand">p</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">Q</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="360" width="131" height="45" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="rus">
+          <content>
+            <p>Напор на стволах. Принимается равным 35 для ручных стволов и 50 для<br />лафетных, м</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">Hраб</e>
+          <e type="operand">Hрс</e>
+          <e type="operand">35</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">Hлс</e>
+          <e type="operand">50</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">2</e>
+          <e type="operand">1</e>
+          <e type="function" args="4">sys</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="405" width="54" height="24" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="rus">
+          <content>
+            <p>растояние между установкой ствола и установкой ПА, м</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">Z</e>
+          <e type="operand">20</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="441" width="273" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Hтн</e>
+          <e type="operand">Δhмл</e>
+          <e type="operand">Δhразв</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">Δhрл</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">Hрс</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">Z</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="468" width="438" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="rus" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="font-family: Courier New;">Если Hтн ≤ Hмакс (Hмакс = 90м) - схема работоспособна</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="540" width="382" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="rus" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="font-family: Courier New;">Для стволов ручных универсальных регулируемых:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="639" width="62" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">nст</e>
+          <e type="operand">5</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="657" width="78" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Sр</e>
+          <e type="operand">0.13</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="675" width="70" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Qф</e>
+          <e type="operand">2.6</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="693" width="207" height="33" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Δhрл</e>
+          <e type="operand">nст</e>
+          <e type="operand">Sр</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">Qф</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">4.394</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="756" width="94" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Pг</e>
+          <e type="operand">0.0438</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="774" width="94" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Pв</e>
+          <e type="operand">0.0003</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="792" width="94" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Pм</e>
+          <e type="operand">0.0088</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="810" width="94" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Pуу</e>
+          <e type="operand">0.001</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="828" width="70" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Pд</e>
+          <e type="operand">0.6</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="846" width="78" height="24" color="#000000" fontSize="10">
+      <math optimize="2">
+        <input>
+          <e type="operand">Z</e>
+          <e type="operand">0.012</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="864" width="300" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Pн</e>
+          <e type="operand">Pг</e>
+          <e type="operand">Pв</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">Pм</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">Pуу</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">Pд</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">Z</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.6659</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="909" width="153" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Hн</e>
+          <e type="operand">Pн</e>
+          <e type="operand">100</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">66.59</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="927" width="62" height="24" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="eng">
+          <content>
+            <p>количество единовременно работающих стволов</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">nст</e>
+          <e type="operand">5</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="954" width="203" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">HH</e>
+          <e type="operand">Hн</e>
+          <e type="operand">nст</e>
+          <e type="operand">Δhрл</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">44.62</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="1071" width="60" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">nст</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">5</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="1089" width="70" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">S</e>
+          <e type="operand">0.13</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1107" width="46" height="24" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="rus">
+          <content>
+            <p>кол-во стволов "А"</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">a</e>
+          <e type="operand">0</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1125" width="46" height="24" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="rus">
+          <content>
+            <p>расход ствола "А"</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">A</e>
+          <e type="operand">7</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1143" width="46" height="24" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="rus">
+          <content>
+            <p>кол-во стволов "Б"</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">b</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1161" width="62" height="24" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="rus">
+          <content>
+            <p>расход</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">B</e>
+          <e type="operand">2.6</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1179" width="46" height="24" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="rus">
+          <content>
+            <p>кол-во лафетных стволов</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">л</e>
+          <e type="operand">0</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1197" width="54" height="24" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="rus">
+          <content>
+            <p>расход лафетного ствола</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">Л</e>
+          <e type="operand">20</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1233" width="205" height="24" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="rus">
+          <content>
+            <p>расход воды на ручном стволе номинальный, л/с</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">Qф</e>
+          <e type="operand">a</e>
+          <e type="operand">A</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">b</e>
+          <e type="operand">B</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">л</e>
+          <e type="operand">Л</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">2.6</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="1260" width="207" height="33" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Δhрл</e>
+          <e type="operand">nст</e>
+          <e type="operand">Sр</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">Qф</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">4.394</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="1296" width="167" height="43" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Nн</e>
+          <e type="operand">Hн</e>
+          <e type="operand">0.8</e>
+          <e type="operand">Pд</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">100</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="function" args="1">Ceil</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">2</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="1377" width="70" height="24" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="eng">
+          <content>
+            <p>напор у стволов, необходимый для их нормальной работы, м</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">hст</e>
+          <e type="operand">20</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1404" width="62" height="24" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="eng">
+          <content>
+            <p>высота подъема ствола, м</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">Zст</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1458" width="207" height="26" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="rus">
+          <content>
+            <p>предельное расстояние, на которое может быть подан ствол</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">R</e>
+          <e type="operand">HH</e>
+          <e type="operand">hст</e>
+          <e type="operand">Zст</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">23.62</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="1539" width="108" height="41" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="eng">
+          <content>
+            <p>давление на пожарном стволе, необходимое для его нормальной работы, МПа</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">P</e>
+          <e type="operand">hст</e>
+          <e type="operand">100</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.2</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="1575" width="70" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">α</e>
+          <e type="operand">0.82</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1593" width="86" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">φ</e>
+          <e type="operand">0.0165</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1620" width="208" height="41" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="eng">
+          <content>
+            <p>расчетная компактная часть водяной струи, м</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">Hp</e>
+          <e type="operand">100</e>
+          <e type="operand">α</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">P</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand">100</e>
+          <e type="operand">φ</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">P</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">12.3308</e>
+        </result>
+      </math>
+    </region>
+  </regions>
+</worksheet>

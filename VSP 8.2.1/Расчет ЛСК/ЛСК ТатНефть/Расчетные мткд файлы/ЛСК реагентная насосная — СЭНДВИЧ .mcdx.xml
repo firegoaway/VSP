@@ -1,5 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<ConversionLog Date="08.10.2021 11:47:29">
-  <WorksheetData SourceVersion="14/15" Source="D:\progz\Расчет ЛСК\ЛСК ТатНефть\Расчетные мткд файлы\ЛСК реагентная насосная — СЭНДВИЧ .xmcd" Destination="D:\progz\Расчет ЛСК\ЛСК ТатНефть\Расчетные мткд файлы\ЛСК реагентная насосная — СЭНДВИЧ .mcdx" />
-  <Worksheet SourceRegionCount="113" WorksheetIssueCount="0" RegionsWithIssueCount="2"><IssueGroup Category="Расхождения в отображении" Count="1"><ConversionIssue Count="1" Text="Изображение оператора изменилось по сравнению с документом-источником. Точность результатов при этом сохраняется." /></IssueGroup><IssueGroup Category="Расхождения в расчетах" Count="1"><ConversionIssue Count="1" Text="При преобразовании изменился шрифт формул. Проверьте, не изменились ли результаты расчетов." /></IssueGroup></Worksheet>
-</ConversionLog>

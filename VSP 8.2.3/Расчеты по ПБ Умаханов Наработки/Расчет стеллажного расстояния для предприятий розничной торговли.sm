@@ -1,0 +1,580 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="0.99.7579.3197"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="96">
+    <identity>
+      <id>508e1ae8-d606-48fd-8eda-24aab4f604dd</id>
+      <revision>93</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="9" orientation="Portrait" width="827" height="1169" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="0.99.7579.3197" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="Math Region" version="0.99.7579.3197" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="TextRegion" version="1.11.7579.3197" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+      <assembly name="ComboBoxList Region" version="1.0.7480.25291" guid="fae04ec0-301f-11d3-bf4b-00c04f79efbc" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region left="0" top="0" width="621" height="24" color="#000000" fontSize="10">
+      <text lang="rus">
+        <p bold="true" underline="true" fontName="Arial">Краткий справочник коэффициентов излучения (степень черноты) различных материалов</p>
+      </text>
+    </region>
+    <region left="0" top="27" width="179" height="389" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">o</e>
+          <e type="operand" style="string">Алюминий</e>
+          <e type="operand">0.04</e>
+          <e type="operand" style="string">Медь</e>
+          <e type="operand">0.18</e>
+          <e type="operand" style="string">Сталь</e>
+          <e type="operand">0.71</e>
+          <e type="operand" style="string">Бумага</e>
+          <e type="operand">0.8</e>
+          <e type="operand" style="string">Вольфрам</e>
+          <e type="operand">0.055</e>
+          <e type="operand" style="string">Железо</e>
+          <e type="operand">0.144</e>
+          <e type="operand" style="string">Чугун</e>
+          <e type="operand">0.56</e>
+          <e type="operand" style="string">Золото</e>
+          <e type="operand">0.02</e>
+          <e type="operand" style="string">Латунь</e>
+          <e type="operand">0.05</e>
+          <e type="operand" style="string">Никель</e>
+          <e type="operand">0.045</e>
+          <e type="operand" style="string">Платина</e>
+          <e type="operand">0.055</e>
+          <e type="operand" style="string">Свинец</e>
+          <e type="operand">0.22</e>
+          <e type="operand" style="string">Серебро</e>
+          <e type="operand">0.03</e>
+          <e type="operand" style="string">Цинк</e>
+          <e type="operand">0.047</e>
+          <e type="operand" style="string">Кирпич</e>
+          <e type="operand">0.07</e>
+          <e type="operand" style="string">Стекло</e>
+          <e type="operand">0.94</e>
+          <e type="operand" style="string">Дерево</e>
+          <e type="operand">0.86</e>
+          <e type="operand" style="string">Резина</e>
+          <e type="operand">0.95</e>
+          <e type="operand" style="string">Лак</e>
+          <e type="operand">0.9</e>
+          <e type="operand" style="string">Шеллак</e>
+          <e type="operand">0.86</e>
+          <e type="operand" style="string">Краска</e>
+          <e type="operand">0.92</e>
+          <e type="operand">21</e>
+          <e type="operand">2</e>
+          <e type="function" args="44">mat</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1071" width="751" height="73" color="#000000" fontSize="10">
+      <text lang="rus" width="741">
+        <p>В соответствии с письмом ВНИИПО МЧС России N 376эп-13-2-3 от 25.01.2017 г. минимальное расстояние между рядами с продукцией, содержащей горючие в-ва и материалы, при котором пожар не будет распространяться с одного ряда на другой с учетом отсутствия автоматического пожаротушения в помещении, может быть определено по формуле:</p>
+      </text>
+    </region>
+    <region left="0" top="1143" width="107" height="43" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">R</e>
+          <e type="operand">Qr</e>
+          <e type="operand">4</e>
+          <e type="operand">π</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">qr</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="function" args="1">sqrt</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1179" width="48" height="24" color="#000000" fontSize="10">
+      <text lang="rus" width="48">
+        <p fontName="Arial">где</p>
+      </text>
+    </region>
+    <region left="27" top="1179" width="20" height="24" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="eng" width="714">
+          <p fontName="Arial">минимальное расстояние от геометрического центра горизонтальной поверхности ряда с продукцией, в котором произошло возгорание, до тепловоспринимающей поверхности соседнего ряда с продукцией, содержащей горючие в-ва и материалы, м</p>
+        </description>
+        <input>
+          <e type="operand">R</e>
+        </input>
+      </math>
+    </region>
+    <region left="27" top="1215" width="28" height="24" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="eng">
+          <p fontName="Arial">радиационная составляющая мощности тепловыделения очага пожара, кВт (Qr=(1-r)Qf</p>
+        </description>
+        <input>
+          <e type="operand">Qr</e>
+        </input>
+      </math>
+    </region>
+    <region left="27" top="1242" width="28" height="24" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="eng">
+          <p fontName="Arial">мощность тепловыделения очага пожара, кВт;</p>
+        </description>
+        <input>
+          <e type="operand">Qf</e>
+        </input>
+      </math>
+    </region>
+    <region left="27" top="1269" width="20" height="24" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="eng">
+          <p fontName="Arial">коэффициент, характеризующий теплопотери на излучение и равный 0,7</p>
+        </description>
+        <input>
+          <e type="operand">r</e>
+        </input>
+      </math>
+    </region>
+    <region left="27" top="1296" width="28" height="24" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="eng" width="714">
+          <p fontName="Arial">плотность теплового потока направленного по нормали к тепловоспринимающей поверхности соседнего ряда с продукцией, кВт/м2</p>
+        </description>
+        <input>
+          <e type="operand">qr</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1341" width="447" height="24" color="#000000" fontSize="10">
+      <text lang="rus">
+        <p>a, b - длина, ширина и высота рассматриваемого объекта</p>
+      </text>
+    </region>
+    <region left="0" top="1359" width="58" height="24" color="#000000" fontSize="10">
+      <math optimize="2" ignoreUnits="true">
+        <input>
+          <e type="operand">a</e>
+          <e type="operand">4</e>
+          <e type="operand" style="unit">m</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1377" width="58" height="24" color="#000000" fontSize="10">
+      <math optimize="2" ignoreUnits="true">
+        <input>
+          <e type="operand">b</e>
+          <e type="operand">1</e>
+          <e type="operand" style="unit">m</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1395" width="58" height="24" color="#000000" fontSize="10">
+      <math optimize="2" ignoreUnits="true">
+        <description active="true" position="Right" lang="eng">
+          <p fontName="Arial">расстояние между облучающей элементарной площадкой и облучаемой или принимается равной высоте пламени</p>
+        </description>
+        <input>
+          <e type="operand">h</e>
+          <e type="operand">1</e>
+          <e type="operand" style="unit">m</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1413" width="110" height="24" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="rus">
+          <p>температура факела пламени</p>
+        </description>
+        <input>
+          <e type="operand">Tф</e>
+          <e type="operand">780</e>
+          <e type="operand">273</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1431" width="110" height="24" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="eng">
+          <p fontName="Arial">температура горючего тела (принимается равной температуре воздуха в помещении)</p>
+        </description>
+        <input>
+          <e type="operand">Tсв</e>
+          <e type="operand">38</e>
+          <e type="operand">273</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1449" width="78" height="24" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="rus">
+          <p>коэффициент излучения абсолютно черного тела Вт/(м^2*K^4)</p>
+        </description>
+        <input>
+          <e type="operand">C0</e>
+          <e type="operand">5.67</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1476" width="283" height="60" color="#000000" fontSize="10">
+      <math ignoreUnits="true">
+        <description active="true" position="Right" lang="eng">
+          <p fontName="Arial">высота факела пламени</p>
+        </description>
+        <input>
+          <e type="operand">H</e>
+          <e type="operand">42</e>
+          <e type="operand">b</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">0.015</e>
+          <e type="operand">1.28</e>
+          <e type="operand" style="unit">g.e</e>
+          <e type="operand">b</e>
+          <e type="operator" args="2">*</e>
+          <e type="function" args="1">sqrt</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="bracket">(</e>
+          <e type="operand">0.61</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">2.7878</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="1539" width="127" height="24" color="#000000" fontSize="10">
+      <text lang="rus">
+        <p>Тогда φ равно:</p>
+      </text>
+    </region>
+    <region left="0" top="1557" width="513" height="56" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="eng">
+          <p fontName="Arial">коэффициент облученности между
+ излучающей и облучаемой 
+поверхностями</p>
+        </description>
+        <input>
+          <e type="operand">φ</e>
+          <e type="operand">2</e>
+          <e type="operand">π</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">a</e>
+          <e type="operand">h</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">a</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">+</e>
+          <e type="function" args="1">sqrt</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">b</e>
+          <e type="operand">h</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">a</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">+</e>
+          <e type="function" args="1">sqrt</e>
+          <e type="operator" args="2">/</e>
+          <e type="function" args="1">atan</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">b</e>
+          <e type="operand">h</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">b</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">+</e>
+          <e type="function" args="1">sqrt</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">a</e>
+          <e type="operand">h</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">b</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">+</e>
+          <e type="function" args="1">sqrt</e>
+          <e type="operator" args="2">/</e>
+          <e type="function" args="1">atan</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1611" width="84" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">φ</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.7011</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="1638" width="375" height="24" color="#000000" fontSize="10">
+      <text lang="rus">
+        <p>Определяем коэффициент теплопотерь материала:</p>
+      </text>
+    </region>
+    <region left="0" top="1665" width="78" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">εф</e>
+          <e type="operand">0.90</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1683" width="210" height="38" color="#000000" fontSize="10">
+      <comboboxlist input="o" inputColumn="1" selected="4" output="Element" outputColumn="2" layout="DropDownList" items="5" firstItem="3" font="Courier New, 10pt" optimization="numeric" decimalPlaces="15" exponentialThreshold="15" significantFigures="0" fractions="decimal" trailingZeros="false" overrideDP="true">
+        <ul>
+          <li>"Алюминий"</li>
+          <li>"Медь"</li>
+          <li>"Сталь"</li>
+          <li>"Бумага"</li>
+          <li>"Вольфрам"</li>
+          <li>"Железо"</li>
+          <li>"Чугун"</li>
+          <li>"Золото"</li>
+          <li>"Латунь"</li>
+          <li>"Никель"</li>
+          <li>"Платина"</li>
+          <li>"Свинец"</li>
+          <li>"Серебро"</li>
+          <li>"Цинк"</li>
+          <li>"Кирпич"</li>
+          <li>"Стекло"</li>
+          <li>"Дерево"</li>
+          <li>"Резина"</li>
+          <li>"Лак"</li>
+          <li>"Шеллак"</li>
+          <li>"Краска"</li>
+        </ul>
+        <input>
+          <e type="operand">εв</e>
+        </input>
+      </comboboxlist>
+    </region>
+    <region left="0" top="1737" width="68" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">εв</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.8</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="1746" width="151" height="35" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="rus">
+          <p>приведённая степень черноты системы</p>
+        </description>
+        <input>
+          <e type="operand">εпр</e>
+          <e type="operand">εф</e>
+          <e type="operand">εв</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1782" width="76" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">εпр</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.7</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="1809" width="367" height="24" color="#000000" fontSize="10">
+      <text lang="rus">
+        <p>С учётом полученных данных теплообмен равен:</p>
+      </text>
+    </region>
+    <region left="0" top="1827" width="254" height="54" color="#000000" fontSize="10">
+      <math>
+        <description active="false" position="Right" lang="eng" width="741">
+          <p fontName="Arial"></p>
+        </description>
+        <input>
+          <e type="operand">gp</e>
+          <e type="operand">C0</e>
+          <e type="operand">εпр</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">Tф</e>
+          <e type="operand">100</e>
+          <e type="operator" args="2">/</e>
+          <e type="bracket">(</e>
+          <e type="operand">4</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">Tсв</e>
+          <e type="operand">100</e>
+          <e type="operator" args="2">/</e>
+          <e type="bracket">(</e>
+          <e type="operand">4</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">φ</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="279" top="1836" width="471" height="57" color="#000000" fontSize="10">
+      <text lang="rus" width="471">
+        <p>В соответствии с экспресс-методикой, разработанной кафедрой НД Академии ГПС МЧС России Qf необходимо определять как интенсивность теплового излучения.</p>
+      </text>
+    </region>
+    <region left="0" top="1881" width="150" height="50" color="#000000" fontSize="10">
+      <math ignoreUnits="true">
+        <description active="true" position="Right" lang="eng">
+          <p fontName="Arial">интенсивность теплового излучения, Вт/м2</p>
+        </description>
+        <input>
+          <e type="operand">gp</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">Вт</e>
+          <e type="operand" style="unit">m</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">/</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">33950.4882</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="1926" width="62" height="24" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="eng">
+          <p fontName="Arial">плотность теплового потока; = 10 кВт/м2 для Бумаги, упаковки, тканей; = 20 кВт/м2 для дерева, фанеры</p>
+        </description>
+        <input>
+          <e type="operand">qr</e>
+          <e type="operand">10</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1944" width="140" height="33" color="#000000" fontSize="10">
+      <math ignoreUnits="true">
+        <input>
+          <e type="operand">Qf</e>
+          <e type="operand">gp</e>
+          <e type="operand">10</e>
+          <e type="operand">3</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">kW</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1971" width="62" height="24" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="eng">
+          <p fontName="Arial">коэффициент, характеризующий теплопотери на излучение</p>
+        </description>
+        <input>
+          <e type="operand">r</e>
+          <e type="operand">0.7</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1989" width="117" height="26" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Right" lang="eng">
+          <p fontName="Arial">радиационная составляющая мощности тепловыделения</p>
+        </description>
+        <input>
+          <e type="operand">Qr</e>
+          <e type="operand">1</e>
+          <e type="operand">r</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operand">Qf</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="2016" width="202" height="43" border="true" color="#000000" fontSize="10">
+      <math ignoreUnits="true">
+        <input>
+          <e type="operand">R</e>
+          <e type="operand">H</e>
+          <e type="operand">Qr</e>
+          <e type="operand">4</e>
+          <e type="operand">π</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">qr</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="function" args="1">sqrt</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">m</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">0.7937</e>
+        </result>
+      </math>
+    </region>
+  </regions>
+</worksheet>
