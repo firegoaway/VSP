@@ -573,7 +573,6 @@ Attribute ЗаменаОпределенияНаРасчёт.VB_ProcData.VB_Invoke_Func = "Normal.NewMacr
         .MatchAllWordForms = False
     End With
     Selection.Find.Execute Replace:=wdReplaceAll
-    Selection.Copy
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
     With Selection.Find
@@ -589,8 +588,6 @@ Attribute ЗаменаОпределенияНаРасчёт.VB_ProcData.VB_Invoke_Func = "Normal.NewMacr
         .MatchSoundsLike = False
         .MatchAllWordForms = False
     End With
-    Windows("(v14) шаблон отчёта Ф3.1 новый 2024.docx").Activate
-    Selection.Copy
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
     With Selection.Find
@@ -606,7 +603,6 @@ Attribute ЗаменаОпределенияНаРасчёт.VB_ProcData.VB_Invoke_Func = "Normal.NewMacr
         .MatchSoundsLike = False
         .MatchAllWordForms = False
     End With
-    Windows("(РПР) Казань 2-я Старо-Аракчинская 11к1.docx").Activate
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
     With Selection.Find
@@ -624,7 +620,6 @@ Attribute ЗаменаОпределенияНаРасчёт.VB_ProcData.VB_Invoke_Func = "Normal.NewMacr
         .MatchAllWordForms = False
     End With
     Selection.Find.Execute Replace:=wdReplaceAll
-    Selection.Copy
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
     With Selection.Find
@@ -641,7 +636,6 @@ Attribute ЗаменаОпределенияНаРасчёт.VB_ProcData.VB_Invoke_Func = "Normal.NewMacr
         .MatchSoundsLike = False
         .MatchAllWordForms = False
     End With
-    Selection.Copy
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
     With Selection.Find
@@ -673,7 +667,6 @@ Attribute ЗаменаОпределенияНаРасчёт.VB_ProcData.VB_Invoke_Func = "Normal.NewMacr
         .MatchAllWordForms = False
     End With
     Selection.Find.Execute Replace:=wdReplaceAll
-    Selection.Copy
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
     With Selection.Find
@@ -688,8 +681,6 @@ Attribute ЗаменаОпределенияНаРасчёт.VB_ProcData.VB_Invoke_Func = "Normal.NewMacr
         .MatchSoundsLike = False
         .MatchAllWordForms = False
     End With
-    Windows("(v14) шаблон отчёта Ф3.1 новый 2024.docx").Activate
-    Selection.Copy
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
     With Selection.Find
@@ -704,7 +695,6 @@ Attribute ЗаменаОпределенияНаРасчёт.VB_ProcData.VB_Invoke_Func = "Normal.NewMacr
         .MatchSoundsLike = False
         .MatchAllWordForms = False
     End With
-    Windows("(РПР) Казань 2-я Старо-Аракчинская 11к1.docx").Activate
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
     With Selection.Find
@@ -722,7 +712,6 @@ Attribute ЗаменаОпределенияНаРасчёт.VB_ProcData.VB_Invoke_Func = "Normal.NewMacr
         .MatchAllWordForms = False
     End With
     Selection.Find.Execute Replace:=wdReplaceAll
-    Selection.Copy
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
     With Selection.Find
@@ -739,8 +728,6 @@ Attribute ЗаменаОпределенияНаРасчёт.VB_ProcData.VB_Invoke_Func = "Normal.NewMacr
         .MatchSoundsLike = False
         .MatchAllWordForms = False
     End With
-    Windows("(v14) шаблон отчёта Ф3.1 новый 2024.docx").Activate
-    Selection.Copy
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
     With Selection.Find
@@ -757,7 +744,6 @@ Attribute ЗаменаОпределенияНаРасчёт.VB_ProcData.VB_Invoke_Func = "Normal.NewMacr
         .MatchSoundsLike = False
         .MatchAllWordForms = False
     End With
-    Windows("(РПР) Казань 2-я Старо-Аракчинская 11к1.docx").Activate
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
     With Selection.Find
@@ -773,5 +759,30 @@ Attribute ЗаменаОпределенияНаРасчёт.VB_ProcData.VB_Invoke_Func = "Normal.NewMacr
         .MatchSoundsLike = False
         .MatchAllWordForms = False
     End With
+    Selection.Find.Execute Replace:=wdReplaceAll
+End Sub
+Sub DeletePerechenIshodnih()
+Attribute DeletePerechenIshodnih.VB_Description = "Удаление заголовка ""Перечень исходных данных"" из отчёта"
+Attribute DeletePerechenIshodnih.VB_ProcData.VB_Invoke_Func = "Normal.NewMacros.DeletePerechenIshodnih"
+'
+' DeletePerechenIshodnih Макрос
+' Удаление заголовка "Перечень исходных данных" из отчёта
+'
+    Selection.Find.Execute
+    Selection.Find.ClearFormatting
+    Selection.Find.Replacement.ClearFormatting
+    With Selection.Find
+        .text = "Перечень исходных данных^p"
+        .Replacement.text = ""
+        .Forward = True
+        .Wrap = wdFindContinue
+        .Format = False
+        .MatchCase = False
+        .MatchWholeWord = False
+        .MatchWildcards = False
+        .MatchSoundsLike = False
+        .MatchAllWordForms = False
+    End With
+    Selection.Find.Execute
     Selection.Find.Execute Replace:=wdReplaceAll
 End Sub
