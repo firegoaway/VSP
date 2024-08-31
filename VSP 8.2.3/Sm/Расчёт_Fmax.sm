@@ -4,7 +4,7 @@
   <settings ppi="96">
     <identity>
       <id>ad418a33-3648-42a6-b222-c75038eb49dd</id>
-      <revision>34</revision>
+      <revision>35</revision>
     </identity>
     <metadata lang="rus">
       <author>Umakhan</author>
@@ -189,7 +189,7 @@
         </result>
       </math>
     </region>
-    <region left="0" top="585" width="137" height="49" color="#000000" fontSize="12">
+    <region left="0" top="585" width="149" height="61" color="#000000" fontSize="12">
       <math>
         <description active="true" position="Right" lang="eng">
           <content>
@@ -200,12 +200,14 @@
           <e type="operand">Cc</e>
           <e type="operand">F</e>
           <e type="operand">Cs</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
           <e type="operator" args="2">/</e>
           <e type="function" args="1">Ceil</e>
           <e type="operator" args="2">:</e>
         </input>
         <result action="numeric">
-          <e type="operand">130</e>
+          <e type="operand">260</e>
         </result>
       </math>
     </region>
