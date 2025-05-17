@@ -45,7 +45,7 @@ Sub InsertPNGplotnost()
                 .Execute
 
                 ' Если плейсхолдер найден, меняем его на изображения по порядку
-                If .Found Then
+                If .found Then
                     ' Рэндж-старт
                     wdRange.Start = wdRange.Start
                     
@@ -162,7 +162,7 @@ Sub InsertPNGdeff()
                 .Execute
 
                 ' Если плейсхолдер найден, меняем его на изображения по порядку
-                If .Found Then
+                If .found Then
                     ' Рэндж-старт
                     wdRange.Start = wdRange.Start
                     
@@ -279,7 +279,7 @@ Sub InsertPNGhrrp()
                 .Execute
 
                 ' Если плейсхолдер найден, меняем его на изображения по порядку
-                If .Found Then
+                If .found Then
                     ' Рэндж-старт
                     wdRange.Start = wdRange.Start
                     

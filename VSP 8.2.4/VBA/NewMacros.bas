@@ -761,6 +761,7 @@ Attribute ЗаменаОпределенияНаРасчёт.VB_ProcData.VB_Invoke_Func = "Normal.NewMacr
     End With
     Selection.Find.Execute Replace:=wdReplaceAll
 End Sub
+
 Sub DeletePerechenIshodnih()
 Attribute DeletePerechenIshodnih.VB_Description = "Удаление заголовка ""Перечень исходных данных"" из отчёта"
 Attribute DeletePerechenIshodnih.VB_ProcData.VB_Invoke_Func = "Normal.NewMacros.DeletePerechenIshodnih"
@@ -785,4 +786,12 @@ Attribute DeletePerechenIshodnih.VB_ProcData.VB_Invoke_Func = "Normal.NewMacros.
     End With
     Selection.Find.Execute
     Selection.Find.Execute Replace:=wdReplaceAll
+End Sub
+Sub DeleteRowsoftheTable()
+Attribute DeleteRowsoftheTable.VB_ProcData.VB_Invoke_Func = "Normal.NewMacros.DeleteRowsoftheTable"
+'
+' DeleteRowsoftheTable Макрос
+'
+'
+    Selection.Rows.Delete
 End Sub

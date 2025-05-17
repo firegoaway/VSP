@@ -1,6 +1,6 @@
 Attribute VB_Name = "Module4"
 Sub DeleteSpecificRows()
-    Dim tbl As Table
+    Dim tbl As table
     Dim rw As Integer
     Dim cl As Integer
     Dim keyword1 As String
@@ -18,9 +18,9 @@ Sub DeleteSpecificRows()
         For rw = tbl.Rows.Count To 2 Step -1
             ' Check each cell in the row
             For cl = 1 To tbl.Rows(rw).Cells.Count
-                If InStr(tbl.Rows(rw).Cells(cl).Range.Text, keyword1) > 0 Or _
-                   InStr(tbl.Rows(rw).Cells(cl).Range.Text, keyword2) > 0 Or _
-                   InStr(tbl.Rows(rw).Cells(cl).Range.Text, keyword3) > 0 Then
+                If InStr(tbl.Rows(rw).Cells(cl).Range.text, keyword1) > 0 Or _
+                   InStr(tbl.Rows(rw).Cells(cl).Range.text, keyword2) > 0 Or _
+                   InStr(tbl.Rows(rw).Cells(cl).Range.text, keyword3) > 0 Then
                     ' If the keyword is found, delete this row and the one above it
                     tbl.Rows(rw).Delete
                     tbl.Rows(rw - 1).Delete

@@ -16,8 +16,8 @@ Sub InsertTextFromSpecificPages()
     sourcePath = "E:\Downloads\AnalysisF31.docx"
         
     ' Prompt the user for the starting and ending page numbers
-    startPage = Val(InputBox("Enter the starting page number:", "Start Page"))
-    endPage = Val(InputBox("Enter the ending page number:", "End Page"))
+    startPage = val(InputBox("Enter the starting page number:", "Start Page"))
+    endPage = val(InputBox("Enter the ending page number:", "End Page"))
 
     If startPage <= 0 Or endPage < startPage Then
         MsgBox "Invalid page range. Please enter valid starting and ending page numbers.", vbExclamation
@@ -26,7 +26,7 @@ Sub InsertTextFromSpecificPages()
     End If
 
     ' Attempt to open the source document
-    Set sourceDocument = Documents.Open(FileName:=sourcePath, ReadOnly:=True, Visible:=False)
+    Set sourceDocument = Documents.Open(fileName:=sourcePath, ReadOnly:=True, Visible:=False)
     If sourceDocument Is Nothing Then
         MsgBox "The document could not be opened.", vbExclamation
         Application.ScreenUpdating = True ' Re-enable the screen updates

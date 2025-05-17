@@ -16,7 +16,7 @@ Sub FindLargestNumberAndReplacePlaceholder()
     Dim nlines As Long
     
     ' Define the specific column number (1-based index)
-    columnNumber = 4
+    columnNumber = val(InputBox("¬веди номер столбца, из которого хочешь извлечь длину пути l", "columnNumber"))
     nlines = val(InputBox("¬веди 2, если в €чейке одно значение, 8, если в €чейке два значени€, 14, если значений три, 20, если значений четыре:", "nlines"))
 
     If Selection.Tables.Count = 0 Then
